@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:pfs-dt="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" targetNamespace="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl-instance-2003-12-31.xsd"/>
+	<xsd:complexType name="monetary14D2ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:monetaryItemType">
+				<xsd:totalDigits value="16"/>
+				<xsd:fractionDigits value="2"/>
+				<xsd:minInclusive value="-99999999999999.99"/>
+				<xsd:maxInclusive value="99999999999999.99"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonNegativeDecimal6D1ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:decimalItemType">
+				<xsd:totalDigits value="7"/>
+				<xsd:fractionDigits value="1"/>
+				<xsd:minInclusive value="0"/>
+				<xsd:maxInclusive value="999999.9"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonNegativeDecimal6D2ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:decimalItemType">
+				<xsd:totalDigits value="8"/>
+				<xsd:fractionDigits value="2"/>
+				<xsd:minInclusive value="0"/>
+				<xsd:maxInclusive value="999999.99"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonNegativeInteger11ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:nonNegativeIntegerItemType">
+				<xsd:totalDigits value="11"/>
+				<xsd:fractionDigits value="0"/>
+				<xsd:minInclusive value="0"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonNegativeInteger6ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:nonNegativeIntegerItemType">
+				<xsd:totalDigits value="6"/>
+				<xsd:fractionDigits value="0"/>
+				<xsd:minInclusive value="0"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonNegativeMonetary14D2ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:monetaryItemType">
+				<xsd:totalDigits value="16"/>
+				<xsd:fractionDigits value="2"/>
+				<xsd:minInclusive value="0"/>
+				<xsd:maxInclusive value="99999999999999.99"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonPositiveMonetary14D2ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:monetaryItemType">
+				<xsd:totalDigits value="16"/>
+				<xsd:fractionDigits value="2"/>
+				<xsd:minInclusive value="-99999999999999.99"/>
+				<xsd:maxInclusive value="0"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonNegativeSharesInteger11ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:sharesItemType">
+				<xsd:totalDigits value="11"/>
+				<xsd:minInclusive value="0"/>
+				<xsd:fractionDigits value="0"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="percentageItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:decimalItemType">
+				<xsd:minInclusive value="0"/>
+				<xsd:maxInclusive value="1"/>
+				<xsd:totalDigits value="5"/>
+				<xsd:fractionDigits value="4"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sharesInteger11ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:sharesItemType">
+				<xsd:totalDigits value="11"/>
+				<xsd:fractionDigits value="0"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonEmptyBase64BinaryItemType" final="extension">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:base64BinaryItemType">
+				<xsd:minLength value="1"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="limitedDateItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:dateItemType">
+				<xsd:minInclusive value="1800-01-01"/>
+				<xsd:maxInclusive value="2049-12-31"/>
+				<xsd:pattern value="([1-9][0-9]{3})-((0[1-9])|(1[012]))-((0[1-9])|([12][0-9])|(3[01]))"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="maxLength250StringItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="250"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="belgianEntityIdentifierStringItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="BE0[0-9]{9}"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="positiveIntegerMin1Max6ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:positiveIntegerItemType">
+				<xsd:totalDigits value="1"/>
+				<xsd:fractionDigits value="0"/>
+				<xsd:minInclusive value="1"/>
+				<xsd:maxInclusive value="6"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="integer6ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:integerItemType">
+				<xsd:totalDigits value="6"/>
+				<xsd:fractionDigits value="0"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="nonEmptyTokenStringItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:tokenItemType">
+				<xsd:minLength value="1"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

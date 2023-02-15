@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:pfs="http://www.nbb.be/be/fr/pfs/ci/2020-02-01" xmlns:pfs-gcd="http://www.nbb.be/be/fr/pfs/ci/gcd/2020-02-01" xmlns:pfs-vl="http://www.nbb.be/be/fr/pfs/ci/vl/2020-02-01" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:schemaRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="http://www.nbb.be/be/fr/pfs/ci/micro/pfs-mic-2020-02-01.xsd" xlink:type="simple"/>
+  <xbrli:context id="CurrentDuration">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.fgov.be">BE0404448131</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2016-01-01</xbrli:startDate>
+      <xbrli:endDate>2016-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="CurrentInstant">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.fgov.be">BE0404448131</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2016-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="PrecedingInstant">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.fgov.be">BE0404448131</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="N-2Instant">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.fgov.be">BE0404448131</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2014-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="PrecedingDuration">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.fgov.be">BE0404448131</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:unit id="U-EUR">
+    <xbrli:measure>iso4217:EUR</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="U-Shares">
+    <xbrli:measure>xbrli:shares</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="U-Pure">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <pfs:PeriodsCovered>
+    <pfs:PeriodStartDate contextRef="PrecedingInstant">2015-01-01</pfs:PeriodStartDate>
+    <pfs:PeriodEndDate contextRef="PrecedingInstant">2015-12-31</pfs:PeriodEndDate>
+  </pfs:PeriodsCovered>
+  <pfs:IntangibleFixedAssets contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">401710</pfs:IntangibleFixedAssets>
+  <pfs:TangibleFixedAssets contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">285327</pfs:TangibleFixedAssets>
+  <pfs:LandBuildings contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">204299</pfs:LandBuildings>
+  <pfs:PlantMachineryEquipment contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">51323</pfs:PlantMachineryEquipment>
+  <pfs:FurnitureVehicles contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">29705</pfs:FurnitureVehicles>
+  <pfs:CurrentsAssets contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">1634464</pfs:CurrentsAssets>
+  <pfs:StocksContractsProgress contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">540829</pfs:StocksContractsProgress>
+  <pfs:Stocks contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">284052</pfs:Stocks>
+  <pfs:ContractsProgress contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">256777</pfs:ContractsProgress>
+  <pfs:AmountsReceivableWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">992922</pfs:AmountsReceivableWithinOneYear>
+  <pfs:TradeDebtorsWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">941206</pfs:TradeDebtorsWithinOneYear>
+  <pfs:OtherAmountsReceivableWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">51716</pfs:OtherAmountsReceivableWithinOneYear>
+  <pfs:CashBankHand contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">81608</pfs:CashBankHand>
+  <pfs:DeferredChargesAccruedIncome contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">19090</pfs:DeferredChargesAccruedIncome>
+  <pfs:Assets contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">7655589</pfs:Assets>
+  <pfs:Equity contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">688796</pfs:Equity>
+  <pfs:Capital contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">350000</pfs:Capital>
+  <pfs:IssuedCapital contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">350000</pfs:IssuedCapital>
+  <pfs:Reserves contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">318375</pfs:Reserves>
+  <pfs:LegalReserve contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">35000</pfs:LegalReserve>
+  <pfs:UntaxedReserves contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">13375</pfs:UntaxedReserves>
+  <pfs:AvailableReserves contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">270000</pfs:AvailableReserves>
+  <pfs:AccumulatedProfitsLosses contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">-2706</pfs:AccumulatedProfitsLosses>
+  <pfs:InvestmentGrants contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">23127</pfs:InvestmentGrants>
+  <pfs:ProvisionLiabilitiesCharges contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">105547</pfs:ProvisionLiabilitiesCharges>
+  <pfs:AmountsPayable contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">1569538</pfs:AmountsPayable>
+  <pfs:AmountsPayableMoreOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">144609</pfs:AmountsPayableMoreOneYear>
+  <pfs:FinancialDebtsRemainingTermMoreOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">144609</pfs:FinancialDebtsRemainingTermMoreOneYear>
+
+  <pfs:AmountsPayableMoreOneYearCreditInstitutionsLeasingOtherSimilarObligations contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">144609</pfs:AmountsPayableMoreOneYearCreditInstitutionsLeasingOtherSimilarObligations>
+  <pfs:AmountsPayableWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">1424247</pfs:AmountsPayableWithinOneYear>
+  <pfs:CurrentPortionAmountsPayableMoreOneYearFallingDueWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">103144</pfs:CurrentPortionAmountsPayableMoreOneYearFallingDueWithinOneYear>
+  <pfs:FinancialDebtsPayableWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">307000</pfs:FinancialDebtsPayableWithinOneYear>
+  <pfs:AmountsPayableWithinOneYearCreditInstitutions contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">307000</pfs:AmountsPayableWithinOneYearCreditInstitutions>
+  <pfs:TradeDebtsPayableWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">685653</pfs:TradeDebtsPayableWithinOneYear>
+  <pfs:SuppliersInvoicesToReceiveWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">685653</pfs:SuppliersInvoicesToReceiveWithinOneYear>
+  <pfs:AdvancesReceivedContractsProgressWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">106353</pfs:AdvancesReceivedContractsProgressWithinOneYear>
+  <pfs:TaxesRemunerationSocialSecurity contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">169597</pfs:TaxesRemunerationSocialSecurity>
+  <pfs:Taxes contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">22518</pfs:Taxes>
+  <pfs:RemunerationSocialSecurity contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">147079</pfs:RemunerationSocialSecurity>
+  <pfs:OtherAmountsPayableWithinOneYear contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">52500</pfs:OtherAmountsPayableWithinOneYear>
+  <pfs:AccruedChargesDeferredIncome contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">682</pfs:AccruedChargesDeferredIncome>
+  <pfs:EquityLiabilities contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">7655589</pfs:EquityLiabilities>
+  <pfs:GrossOperatingMargin contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">1203669</pfs:GrossOperatingMargin>
+
+  <pfs:DepreciationOtherAmountsWrittenDownFormationExpensesIntangibleTangibleFixedAssets contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">205951</pfs:DepreciationOtherAmountsWrittenDownFormationExpensesIntangibleTangibleFixedAssets>
+
+  <pfs:AmountsWrittenDownStocksContractsProgressTradeDebtorsAppropriationsWriteBacks contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">3198</pfs:AmountsWrittenDownStocksContractsProgressTradeDebtorsAppropriationsWriteBacks>
+  <pfs:ProvisionsRisksChargesAppropriationsWriteBacks contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">-12744</pfs:ProvisionsRisksChargesAppropriationsWriteBacks>
+  <pfs:MiscellaneousOperatingCharges contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">11851</pfs:MiscellaneousOperatingCharges>
+  <pfs:OperatingProfitLoss contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">-24839</pfs:OperatingProfitLoss>
+  <pfs:FinancialIncome contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">14850</pfs:FinancialIncome>
+  <pfs:FinancialCharges contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">32436</pfs:FinancialCharges>
+  <pfs:GainLossBeforeTaxes contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">-42425</pfs:GainLossBeforeTaxes>
+  <pfs:TransferFromDeferredTaxes contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">6865</pfs:TransferFromDeferredTaxes>
+  <pfs:IncomeTaxes contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">974</pfs:IncomeTaxes>
+  <pfs:GainLossPeriod contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">-36534</pfs:GainLossPeriod>
+  <pfs:GainLossToBeAppropriated contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">-36534</pfs:GainLossToBeAppropriated>
+  <pfs:ProfitLossToBeAppropriated contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">-35142</pfs:ProfitLossToBeAppropriated>
+  <pfs:AccumulatedProfitsLosses contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">1392</pfs:AccumulatedProfitsLosses>
+  <pfs:AccumulatedProfitsLosses contextRef="N-2Instant" decimals="INF" unitRef="U-EUR">9467</pfs:AccumulatedProfitsLosses>
+  <pfs:ProfitLossToBeAppropriated contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">30050</pfs:ProfitLossToBeAppropriated>
+  <pfs:GainLossToBeAppropriated contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">20583</pfs:GainLossToBeAppropriated>
+  <pfs:TransfersToCapitalReserves contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">28658</pfs:TransfersToCapitalReserves>
+  <pfs:AppropriationsLegalReserve contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">22605</pfs:AppropriationsLegalReserve>
+  <pfs:AppropriationsOtherReserves contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">6053</pfs:AppropriationsOtherReserves>
+  <pfs:IntangibleFixedAssetsAcquisitionValue contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">688940</pfs:IntangibleFixedAssetsAcquisitionValue>
+  <pfs:IntangibleFixedAssetsAcquisitionValue contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">393458</pfs:IntangibleFixedAssetsAcquisitionValue>
+  <pfs:IntangibleFixedAssetsAcquisitionIncludingProducedFixedAssets contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">295482</pfs:IntangibleFixedAssetsAcquisitionIncludingProducedFixedAssets>
+  <pfs:IntangibleFixedAssetsDepreciationsAmountWrittenDown contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">287230</pfs:IntangibleFixedAssetsDepreciationsAmountWrittenDown>
+  <pfs:IntangibleFixedAssetsDepreciationsAmountWrittenDown contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">185538</pfs:IntangibleFixedAssetsDepreciationsAmountWrittenDown>
+  <pfs:IntangibleFixedAssetsDepreciationsAmountWrittenDownRecorded contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">132461</pfs:IntangibleFixedAssetsDepreciationsAmountWrittenDownRecorded>
+  <pfs:IntangibleFixedAssetsDepreciationsAmountWrittenBack contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">30769</pfs:IntangibleFixedAssetsDepreciationsAmountWrittenBack>
+  <pfs:TangibleFixedAssetsAcquisitionValue contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">894637</pfs:TangibleFixedAssetsAcquisitionValue>
+  <pfs:TangibleFixedAssetsAcquisitionValue contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">828620</pfs:TangibleFixedAssetsAcquisitionValue>
+  <pfs:TangibleFixedAssetsAcquisitionIncludingProducedFixedAssets contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">81674</pfs:TangibleFixedAssetsAcquisitionIncludingProducedFixedAssets>
+  <pfs:TangibleFixedAssetsSalesDisposals contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">15657</pfs:TangibleFixedAssetsSalesDisposals>
+  <pfs:TangibleFixedAssetsDepreciationsAmountWrittenDown contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">609310</pfs:TangibleFixedAssetsDepreciationsAmountWrittenDown>
+  <pfs:TangibleFixedAssetsDepreciationsAmountWrittenDown contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">538951</pfs:TangibleFixedAssetsDepreciationsAmountWrittenDown>
+  <pfs:TangibleFixedAssetsDepreciationsAmountWrittenDownRecorded contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">73490</pfs:TangibleFixedAssetsDepreciationsAmountWrittenDownRecorded>
+
+  <pfs:TangibleFixedAssetsDepreciationsAmountWrittenDownCancelledOwingSalesDisposals contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">3131</pfs:TangibleFixedAssetsDepreciationsAmountWrittenDownCancelledOwingSalesDisposals>
+  <pfs:FinancialFixedAssetsAcquisitionValue contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">54289</pfs:FinancialFixedAssetsAcquisitionValue>
+  <pfs:FinancialFixedAssetsAcquisitionValue contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">54326</pfs:FinancialFixedAssetsAcquisitionValue>
+  <pfs:FinancialFixedAssetsSalesDisposals contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">37</pfs:FinancialFixedAssetsSalesDisposals>
+  <pfs:ParticipatingInterestsShares>
+    <pfs:ParticipatingInterestsSharesEntityName contextRef="CurrentDuration">Laser applications</pfs:ParticipatingInterestsSharesEntityName>
+    <pfs:ParticipatingInterestsSharesEntityIdentifier>
+      <pfs-gcd:IdentifierName contextRef="CurrentDuration">Numéro d'entreprise</pfs-gcd:IdentifierName>
+      <pfs-gcd:IdentifierValue contextRef="CurrentDuration">BE0459856016</pfs-gcd:IdentifierValue>
+    </pfs:ParticipatingInterestsSharesEntityIdentifier>
+    <pfs:ParticipatingInterestsSharesEntityAddress>
+      <pfs-gcd:AddressType>
+        <pfs-vl:XCode_AddressTypeCode_001 contextRef="CurrentDuration">001</pfs-vl:XCode_AddressTypeCode_001>
+      </pfs-gcd:AddressType>
+      <pfs-gcd:Street contextRef="CurrentDuration">Bois d'Ougrée</pfs-gcd:Street>
+      <pfs-gcd:Number contextRef="CurrentDuration">142</pfs-gcd:Number>
+      <pfs-gcd:PostalCodeCity>
+        <pfs-vl:XCode_PostalCode_8000 contextRef="CurrentDuration">8000</pfs-vl:XCode_PostalCode_8000>
+      </pfs-gcd:PostalCodeCity>
+      <pfs-gcd:CountryCode>
+        <pfs-vl:XCode_CountryCode_BE contextRef="CurrentDuration">BE</pfs-vl:XCode_CountryCode_BE>
+      </pfs-gcd:CountryCode>
+    </pfs:ParticipatingInterestsSharesEntityAddress>
+    <pfs:ParticipatingInterestsSharesEndDateLastAvailableAnnualAccounts contextRef="CurrentInstant">2011-12-31</pfs:ParticipatingInterestsSharesEndDateLastAvailableAnnualAccounts>
+    <pfs:ParticipatingInterestsSharesEquityLastAvailableAnnualAccounts contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">257979</pfs:ParticipatingInterestsSharesEquityLastAvailableAnnualAccounts>
+
+    <pfs:ParticipatingInterestsSharesNetResultLastAvailableAnnualAccounts contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">-23211</pfs:ParticipatingInterestsSharesNetResultLastAvailableAnnualAccounts>
+    <pfs:ParticipatingInterestsHeld>
+      <pfs:ParticipatingInterestsHeldType contextRef="CurrentDuration">CSV</pfs:ParticipatingInterestsHeldType>
+      <pfs:ParticipatingInterestsHeldDirectlyNumber contextRef="CurrentDuration" decimals="INF" unitRef="U-Shares">1254</pfs:ParticipatingInterestsHeldDirectlyNumber>
+      <pfs:ParticipatingInterestsHeldDirectlyPercentage contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">0.236</pfs:ParticipatingInterestsHeldDirectlyPercentage>
+    </pfs:ParticipatingInterestsHeld>
+  </pfs:ParticipatingInterestsShares>
+  <pfs:RemunerationSocialSecurityPensions contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">1020252</pfs:RemunerationSocialSecurityPensions>
+
+  <pfs:RealGuaranteesProvidedOrIrrevocablyPromisedByEnterpriseOnItsOwnAssetsSecurityDebtsCommitmentsEnterpriseBookValueImmovablePropertiesMortgaged contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">136353</pfs:RealGuaranteesProvidedOrIrrevocablyPromisedByEnterpriseOnItsOwnAssetsSecurityDebtsCommitmentsEnterpriseBookValueImmovablePropertiesMortgaged>
+
+  <pfs:RealGuaranteesProvidedOrIrrevocablyPromisedByEnterpriseOnItsOwnAssetsSecurityDebtsCommitmentsEnterpriseAmountMortgageRegistration contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">409024</pfs:RealGuaranteesProvidedOrIrrevocablyPromisedByEnterpriseOnItsOwnAssetsSecurityDebtsCommitmentsEnterpriseAmountMortgageRegistration>
+
+  <pfs:RealGuaranteesProvidedOrIrrevocablyPromisedByEnterpriseOnItsOwnAssetsSecurityDebtsCommitmentsEnterpriseBookValueOtherAssetsPledged contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">17687</pfs:RealGuaranteesProvidedOrIrrevocablyPromisedByEnterpriseOnItsOwnAssetsSecurityDebtsCommitmentsEnterpriseBookValueOtherAssetsPledged>
+  <pfs:AverageNumberEmployeesPersonnelRegisterTotalFullTimeEquivalents contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">20.2</pfs:AverageNumberEmployeesPersonnelRegisterTotalFullTimeEquivalents>
+  <pfs:AverageNumberEmployeesPersonnelRegisterTotalFullTimeEquivalents contextRef="PrecedingDuration" decimals="INF" unitRef="U-Pure">21.5</pfs:AverageNumberEmployeesPersonnelRegisterTotalFullTimeEquivalents>
+  <pfs:AverageNumberEmployeesPersonnelRegisterTotalFullTime contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">16.6</pfs:AverageNumberEmployeesPersonnelRegisterTotalFullTime>
+  <pfs:AverageNumberEmployeesPersonnelRegisterTotalPartTime contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">4.9</pfs:AverageNumberEmployeesPersonnelRegisterTotalPartTime>
+  <pfs:NumberHoursActuallyWorkedTotal contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">34071</pfs:NumberHoursActuallyWorkedTotal>
+  <pfs:NumberHoursActuallyWorkedTotal contextRef="PrecedingDuration" decimals="INF" unitRef="U-Pure">36087</pfs:NumberHoursActuallyWorkedTotal>
+  <pfs:NumberHoursActuallyWorkedFullTime contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">27727</pfs:NumberHoursActuallyWorkedFullTime>
+  <pfs:NumberHoursActuallyWorkedPartTime contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">6344</pfs:NumberHoursActuallyWorkedPartTime>
+  <pfs:PersonnelCostsTotal contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">1020252</pfs:PersonnelCostsTotal>
+  <pfs:PersonnelCostsTotal contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">1057012</pfs:PersonnelCostsTotal>
+  <pfs:PersonnelCostsFullTime contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">830282</pfs:PersonnelCostsFullTime>
+  <pfs:PersonnelCostsPartTime contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">189970</pfs:PersonnelCostsPartTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearTotalFullTimeEquivalents contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">18</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearTotalFullTimeEquivalents>
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearFullTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">16</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearFullTime>
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearPartTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">3</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearPartTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearContractIndefinitePeriodTotalFullTimeEquivalents contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">18</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearContractIndefinitePeriodTotalFullTimeEquivalents>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearContractIndefinitePeriodFullTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">16</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearContractIndefinitePeriodFullTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearContractIndefinitePeriodPartTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">3</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearContractIndefinitePeriodPartTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearMenTotalFullTimeEquivalents contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">15</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearMenTotalFullTimeEquivalents>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearMenFullTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">15</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearMenFullTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWomenTotalFullTimeEquivalents contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">3</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWomenTotalFullTimeEquivalents>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWomenFullTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">1</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWomenFullTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWomenPartTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">3</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWomenPartTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearManagementStaffTotalFullTimeEquivalents contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">1</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearManagementStaffTotalFullTimeEquivalents>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearManagementStaffFullTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">1</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearManagementStaffFullTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearEmployeesTotalFullTimeEquivalents contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">14.1</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearEmployeesTotalFullTimeEquivalents>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearEmployeesFullTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">13</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearEmployeesFullTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearEmployeesPartTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">2</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearEmployeesPartTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWorkersTotalFullTimeEquivalents contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">2.9</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWorkersTotalFullTimeEquivalents>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWorkersFullTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">2</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWorkersFullTime>
+
+  <pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWorkersPartTime contextRef="CurrentInstant" decimals="INF" unitRef="U-Pure">1</pfs:NumberEmployeesPersonnelRegisterClosingDateFinancialYearWorkersPartTime>
+
+  <pfs:NumberEmployeesWhoseContractTerminationDateHasBeenEnteredPersonnelRegisterDuringFinancialYearTotalFullTimeEquivalents contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">2.9</pfs:NumberEmployeesWhoseContractTerminationDateHasBeenEnteredPersonnelRegisterDuringFinancialYearTotalFullTimeEquivalents>
+
+  <pfs:NumberEmployeesWhoseContractTerminationDateHasBeenEnteredPersonnelRegisterDuringFinancialYearFullTime contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">1</pfs:NumberEmployeesWhoseContractTerminationDateHasBeenEnteredPersonnelRegisterDuringFinancialYearFullTime>
+
+  <pfs:NumberEmployeesWhoseContractTerminationDateHasBeenEnteredPersonnelRegisterDuringFinancialYearPartTime contextRef="CurrentDuration" decimals="INF" unitRef="U-Pure">3</pfs:NumberEmployeesWhoseContractTerminationDateHasBeenEnteredPersonnelRegisterDuringFinancialYearPartTime>
+  <pfs-gcd:EntityInformation>
+    <pfs-gcd:EntityName>
+      <pfs-gcd:EntityCurrentLegalName contextRef="CurrentDuration">KStef</pfs-gcd:EntityCurrentLegalName>
+    </pfs-gcd:EntityName>
+    <pfs-gcd:EntityIdentifier>
+      <pfs-gcd:IdentifierName contextRef="CurrentDuration">Numéro d'entreprise</pfs-gcd:IdentifierName>
+      <pfs-gcd:IdentifierValue contextRef="CurrentDuration">BE0404448131</pfs-gcd:IdentifierValue>
+    </pfs-gcd:EntityIdentifier>
+    <pfs-gcd:EntityForm>
+      <pfs-vl:XCode_LegalFormCode_014 contextRef="CurrentDuration">014</pfs-vl:XCode_LegalFormCode_014>
+    </pfs-gcd:EntityForm>
+    <pfs-gcd:EntityAddress>
+      <pfs-gcd:AddressType>
+        <pfs-vl:XCode_AddressTypeCode_001 contextRef="CurrentDuration">001</pfs-vl:XCode_AddressTypeCode_001>
+      </pfs-gcd:AddressType>
+      <pfs-gcd:Street contextRef="CurrentDuration">Rue Bois d'Evegnée</pfs-gcd:Street>
+      <pfs-gcd:Number contextRef="CurrentDuration">142</pfs-gcd:Number>
+      <pfs-gcd:PostalCodeCity>
+        <pfs-vl:XCode_PostalCode_4630 contextRef="CurrentDuration">4630</pfs-vl:XCode_PostalCode_4630>
+      </pfs-gcd:PostalCodeCity>
+      <pfs-gcd:CountryCode>
+        <pfs-vl:XCode_CountryCode_BE contextRef="CurrentDuration">BE</pfs-vl:XCode_CountryCode_BE>
+      </pfs-gcd:CountryCode>
+    </pfs-gcd:EntityAddress>
+    <pfs-gcd:CommercialCourt>
+      <pfs-vl:XCode_CommercialCourt_15 contextRef="CurrentDuration">15</pfs-vl:XCode_CommercialCourt_15>
+    </pfs-gcd:CommercialCourt>
+    <pfs-gcd:EntityIndustrySectorCodeIdentifier>
+      <pfs-vl:XCode_IndustrySectorCode_71121 contextRef="CurrentDuration">71121</pfs-vl:XCode_IndustrySectorCode_71121>
+    </pfs-gcd:EntityIndustrySectorCodeIdentifier>
+    <pfs-gcd:DepositDateLastDeed contextRef="CurrentInstant">1982-01-19</pfs-gcd:DepositDateLastDeed>
+  </pfs-gcd:EntityInformation>
+  <pfs:EnterpriseSituation>
+	<pfs:NewCompanyCode contextRef="CurrentDuration">true</pfs:NewCompanyCode>
+	<pfs:WithoutCapital contextRef="CurrentDuration">true</pfs:WithoutCapital>
+	<pfs:Contribution>
+	  <pfs:AvailableContribution contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">6789</pfs:AvailableContribution>
+	  <pfs:NotAvailableContribution contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">9876</pfs:NotAvailableContribution>
+	</pfs:Contribution>
+  </pfs:EnterpriseSituation>
+  <pfs:PeriodsCovered>
+    <pfs:PeriodStartDate contextRef="CurrentInstant">2016-01-01</pfs:PeriodStartDate>
+    <pfs:PeriodEndDate contextRef="CurrentInstant">2016-12-31</pfs:PeriodEndDate>
+    <pfs:PrecedingPeriodData contextRef="CurrentDuration">true</pfs:PrecedingPeriodData>
+    <pfs:AccountsApprovalDateGeneralAssembly contextRef="CurrentInstant">2017-02-10</pfs:AccountsApprovalDateGeneralAssembly>
+    <pfs:Schema>
+      <pfs-vl:XCode_SchemaCode_70 contextRef="CurrentDuration">70</pfs-vl:XCode_SchemaCode_70>
+    </pfs:Schema>
+  </pfs:PeriodsCovered>
+  <pfs:AdministratorIndividual>
+    <pfs:ParticipantIndividualName contextRef="CurrentDuration">Thieusie</pfs:ParticipantIndividualName>
+    <pfs:ParticipantIndividualFirstName contextRef="CurrentDuration">Daniel</pfs:ParticipantIndividualFirstName>
+    <pfs:ParticipantIndividualProfession contextRef="CurrentDuration">Analyste</pfs:ParticipantIndividualProfession>
+    <pfs:ParticipantAddress>
+      <pfs-gcd:AddressType>
+        <pfs-vl:XCode_AddressTypeCode_001 contextRef="CurrentDuration">001</pfs-vl:XCode_AddressTypeCode_001>
+      </pfs-gcd:AddressType>
+      <pfs-gcd:Street contextRef="CurrentDuration">Rue du Bois</pfs-gcd:Street>
+      <pfs-gcd:Number contextRef="CurrentDuration">13</pfs-gcd:Number>
+      <pfs-gcd:PostalCodeCity>
+        <pfs-vl:XCode_PostalCode_5070 contextRef="CurrentDuration">5070</pfs-vl:XCode_PostalCode_5070>
+      </pfs-gcd:PostalCodeCity>
+      <pfs-gcd:CountryCode>
+        <pfs-vl:XCode_CountryCode_BE contextRef="CurrentDuration">BE</pfs-vl:XCode_CountryCode_BE>
+      </pfs-gcd:CountryCode>
+    </pfs:ParticipantAddress>
+    <pfs:ParticipantMandate>
+      <pfs:ParticipantMandateFunction>
+        <pfs-vl:XCode_FunctionCode_14 contextRef="CurrentDuration">14</pfs-vl:XCode_FunctionCode_14>
+      </pfs:ParticipantMandateFunction>
+      <pfs:ParticipantMandateStartDate contextRef="CurrentInstant">2012-04-09</pfs:ParticipantMandateStartDate>
+      <pfs:ParticipantMandateEndDate contextRef="CurrentInstant">2016-04-22</pfs:ParticipantMandateEndDate>
+    </pfs:ParticipantMandate>
+  </pfs:AdministratorIndividual>
+  <pfs:SupplementaryAuditingAdjustmentMission>
+    <pfs:EffectiveSupplementaryAuditingAdjustmentMission contextRef="CurrentDuration">true</pfs:EffectiveSupplementaryAuditingAdjustmentMission>
+    <pfs:SupplementaryAuditorEntity>
+      <pfs:ParticipantEntityName contextRef="CurrentDuration">BIECS SPRL</pfs:ParticipantEntityName>
+      <pfs:ParticipantEntityIdentifier>
+        <pfs-gcd:IdentifierName contextRef="CurrentDuration">Numéro d'entreprise</pfs-gcd:IdentifierName>
+        <pfs-gcd:IdentifierValue contextRef="CurrentDuration">BE0400774207</pfs-gcd:IdentifierValue>
+      </pfs:ParticipantEntityIdentifier>
+      <pfs:ParticipantNumber contextRef="CurrentDuration">22.078.5D.91</pfs:ParticipantNumber>
+      <pfs:ParticipantAddress>
+        <pfs-gcd:AddressType>
+          <pfs-vl:XCode_AddressTypeCode_001 contextRef="CurrentDuration">001</pfs-vl:XCode_AddressTypeCode_001>
+        </pfs-gcd:AddressType>
+        <pfs-gcd:Street contextRef="CurrentDuration">Rue Haute</pfs-gcd:Street>
+        <pfs-gcd:Number contextRef="CurrentDuration">20</pfs-gcd:Number>
+        <pfs-gcd:PostalCodeCity>
+          <pfs-vl:XCode_PostalCode_4600 contextRef="CurrentDuration">4600</pfs-vl:XCode_PostalCode_4600>
+        </pfs-gcd:PostalCodeCity>
+        <pfs-gcd:CountryCode>
+          <pfs-vl:XCode_CountryCode_BE contextRef="CurrentDuration">BE</pfs-vl:XCode_CountryCode_BE>
+        </pfs-gcd:CountryCode>
+      </pfs:ParticipantAddress>
+      <pfs:ParticipantRepresentative>
+        <pfs:ParticipantRepresentativeName contextRef="CurrentDuration">Pull</pfs:ParticipantRepresentativeName>
+        <pfs:ParticipantRepresentativeFirstName contextRef="CurrentDuration">Marc</pfs:ParticipantRepresentativeFirstName>
+        <pfs:ParticipantRepresentativeAddress>
+          <pfs-gcd:AddressType>
+            <pfs-vl:XCode_AddressTypeCode_001 contextRef="CurrentDuration">001</pfs-vl:XCode_AddressTypeCode_001>
+          </pfs-gcd:AddressType>
+          <pfs-gcd:Street contextRef="CurrentDuration">Rue En-Dessous</pfs-gcd:Street>
+          <pfs-gcd:Number contextRef="CurrentDuration">20</pfs-gcd:Number>
+          <pfs-gcd:PostalCodeCity>
+            <pfs-vl:XCode_PostalCode_4500 contextRef="CurrentDuration">4500</pfs-vl:XCode_PostalCode_4500>
+          </pfs-gcd:PostalCodeCity>
+          <pfs-gcd:CountryCode>
+            <pfs-vl:XCode_CountryCode_BE contextRef="CurrentDuration">BE</pfs-vl:XCode_CountryCode_BE>
+          </pfs-gcd:CountryCode>
+        </pfs:ParticipantRepresentativeAddress>
+      </pfs:ParticipantRepresentative>
+      <pfs:SupplementaryAuditingAdjustmentMissionNatureMission>
+        <pfs-vl:XCode_NatureMissionCode_B contextRef="CurrentDuration">B</pfs-vl:XCode_NatureMissionCode_B>
+      </pfs:SupplementaryAuditingAdjustmentMissionNatureMission>
+      <pfs:SupplementaryAuditingAdjustmentMissionNatureMission>
+        <pfs-vl:XCode_NatureMissionCode_C contextRef="CurrentDuration">C</pfs-vl:XCode_NatureMissionCode_C>
+      </pfs:SupplementaryAuditingAdjustmentMissionNatureMission>
+    </pfs:SupplementaryAuditorEntity>
+  </pfs:SupplementaryAuditingAdjustmentMission>
+  <pfs:IntangibleFixedAssets contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">207920</pfs:IntangibleFixedAssets>
+  <pfs:TangibleFixedAssets contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">289669</pfs:TangibleFixedAssets>
+  <pfs:LandBuildings contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">149085</pfs:LandBuildings>
+  <pfs:PlantMachineryEquipment contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">74000</pfs:PlantMachineryEquipment>
+  <pfs:FurnitureVehicles contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">59584</pfs:FurnitureVehicles>
+  <pfs:AssetsUnderConstructionAdvancePayments contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">7000</pfs:AssetsUnderConstructionAdvancePayments>
+  <pfs:FinancialFixedAssets contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">54326</pfs:FinancialFixedAssets>
+  <pfs:CurrentsAssets contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">1497773</pfs:CurrentsAssets>
+  <pfs:StocksContractsProgress contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">750711</pfs:StocksContractsProgress>
+  <pfs:Stocks contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">437842</pfs:Stocks>
+  <pfs:ContractsProgress contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">312869</pfs:ContractsProgress>
+  <pfs:AmountsReceivableWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">665224</pfs:AmountsReceivableWithinOneYear>
+  <pfs:TradeDebtorsWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">592187</pfs:TradeDebtorsWithinOneYear>
+  <pfs:OtherAmountsReceivableWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">73037</pfs:OtherAmountsReceivableWithinOneYear>
+  <pfs:CashBankHand contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">71892</pfs:CashBankHand>
+  <pfs:DeferredChargesAccruedIncome contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">9946</pfs:DeferredChargesAccruedIncome>
+  <pfs:Assets contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">2049688</pfs:Assets>
+  <pfs:Equity contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">706227</pfs:Equity>
+  <pfs:Capital contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">350000</pfs:Capital>
+  <pfs:IssuedCapital contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">350000</pfs:IssuedCapital>
+  <pfs:Reserves contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">318375</pfs:Reserves>
+  <pfs:LegalReserve contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">35000</pfs:LegalReserve>
+  <pfs:UntaxedReserves contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">13375</pfs:UntaxedReserves>
+  <pfs:AvailableReserves contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">270000</pfs:AvailableReserves>
+  <pfs:InvestmentGrants contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">36460</pfs:InvestmentGrants>
+  <pfs:ProvisionsDeferredTaxes contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">137066</pfs:ProvisionsDeferredTaxes>
+  <pfs:ProvisionLiabilitiesCharges contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">118292</pfs:ProvisionLiabilitiesCharges>
+  <pfs:DeferredTaxes contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">18774</pfs:DeferredTaxes>
+  <pfs:AmountsPayable contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">1206395</pfs:AmountsPayable>
+  <pfs:AmountsPayableMoreOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">100715</pfs:AmountsPayableMoreOneYear>
+  <pfs:FinancialDebtsRemainingTermMoreOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">100715</pfs:FinancialDebtsRemainingTermMoreOneYear>
+
+  <pfs:AmountsPayableMoreOneYearCreditInstitutionsLeasingOtherSimilarObligations contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">100715</pfs:AmountsPayableMoreOneYearCreditInstitutionsLeasingOtherSimilarObligations>
+  <pfs:AmountsPayableWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">1104669</pfs:AmountsPayableWithinOneYear>
+  <pfs:CurrentPortionAmountsPayableMoreOneYearFallingDueWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">69575</pfs:CurrentPortionAmountsPayableMoreOneYearFallingDueWithinOneYear>
+  <pfs:FinancialDebtsPayableWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">325201</pfs:FinancialDebtsPayableWithinOneYear>
+  <pfs:AmountsPayableWithinOneYearCreditInstitutions contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">325201</pfs:AmountsPayableWithinOneYearCreditInstitutions>
+  <pfs:TradeDebtsPayableWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">290031</pfs:TradeDebtsPayableWithinOneYear>
+  <pfs:SuppliersInvoicesToReceiveWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">290031</pfs:SuppliersInvoicesToReceiveWithinOneYear>
+  <pfs:AdvancesReceivedContractsProgressWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">159964</pfs:AdvancesReceivedContractsProgressWithinOneYear>
+  <pfs:TaxesRemunerationSocialSecurity contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">244998</pfs:TaxesRemunerationSocialSecurity>
+  <pfs:Taxes contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">76075</pfs:Taxes>
+  <pfs:RemunerationSocialSecurity contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">168923</pfs:RemunerationSocialSecurity>
+  <pfs:OtherAmountsPayableWithinOneYear contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">14900</pfs:OtherAmountsPayableWithinOneYear>
+  <pfs:AccruedChargesDeferredIncome contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">1011</pfs:AccruedChargesDeferredIncome>
+  <pfs:EquityLiabilities contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">2049688</pfs:EquityLiabilities>
+  <pfs:GrossOperatingMargin contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">1302176</pfs:GrossOperatingMargin>
+  <pfs:RemunerationSocialSecurityPensions contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">1057012</pfs:RemunerationSocialSecurityPensions>
+
+  <pfs:DepreciationOtherAmountsWrittenDownFormationExpensesIntangibleTangibleFixedAssets contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">188873</pfs:DepreciationOtherAmountsWrittenDownFormationExpensesIntangibleTangibleFixedAssets>
+  <pfs:ProvisionsRisksChargesAppropriationsWriteBacks contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">-9199</pfs:ProvisionsRisksChargesAppropriationsWriteBacks>
+  <pfs:MiscellaneousOperatingCharges contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">19604</pfs:MiscellaneousOperatingCharges>
+  <pfs:OperatingProfitLoss contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">45886</pfs:OperatingProfitLoss>
+  <pfs:FinancialIncome contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">21071</pfs:FinancialIncome>
+  <pfs:FinancialCharges contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">29696</pfs:FinancialCharges>
+  <pfs:GainLossBeforeTaxes contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">37282</pfs:GainLossBeforeTaxes>
+  <pfs:TransferFromDeferredTaxes contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">6865</pfs:TransferFromDeferredTaxes>
+  <pfs:IncomeTaxes contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">10189</pfs:IncomeTaxes>
+  <pfs:GainLossPeriod contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">33958</pfs:GainLossPeriod>
+  <pfs:TransferToUntaxedReserves contextRef="PrecedingDuration" decimals="INF" unitRef="U-EUR">13375</pfs:TransferToUntaxedReserves>
+  <pfs:JointIndustrialCommittees>
+    <pfs:NumberJointIndustrialCommittee>
+      <pfs-vl:XCode_JointCommitteeCode_14901 contextRef="CurrentDuration">14901</pfs-vl:XCode_JointCommitteeCode_14901>
+    </pfs:NumberJointIndustrialCommittee>
+    <pfs:NumberJointIndustrialCommittee>
+      <pfs-vl:XCode_JointCommitteeCode_218 contextRef="CurrentDuration">218</pfs-vl:XCode_JointCommitteeCode_218>
+    </pfs:NumberJointIndustrialCommittee>
+  </pfs:JointIndustrialCommittees>
+  <pfs-gcd:DocumentInformation>
+    <pfs-gcd:DocumentIdentifier contextRef="CurrentDuration">Comptes annuels</pfs-gcd:DocumentIdentifier>
+    <pfs-gcd:DocumentLanguage>
+      <pfs-vl:XCode_LanguageCode_FR contextRef="CurrentDuration">FR</pfs-vl:XCode_LanguageCode_FR>
+    </pfs-gcd:DocumentLanguage>
+    <pfs-gcd:SoftwareVendor contextRef="CurrentDuration">NBB</pfs-gcd:SoftwareVendor>
+  </pfs-gcd:DocumentInformation>
+  <pfs:FormationExpenses contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">21125</pfs:FormationExpenses>
+  <pfs:FormationExpenses contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">21125</pfs:FormationExpenses>
+  <pfs:FixedAssetsFormationExpensesExcluded contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">6000000</pfs:FixedAssetsFormationExpensesExcluded>
+  <pfs:FixedAssetsFormationExpensesExcluded contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">5890000</pfs:FixedAssetsFormationExpensesExcluded>
+  <pfs:OwnSharesHeldCompanyItselfAmountCapitalHeld contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">15</pfs:OwnSharesHeldCompanyItselfAmountCapitalHeld>
+  <pfs:NumberOwnSharesHeldCompanyItself contextRef="CurrentInstant" decimals="INF" unitRef="U-Shares">16</pfs:NumberOwnSharesHeldCompanyItself>
+  <pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheet>
+    <pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheetTitle contextRef="CurrentDuration">Caution immeuble</pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheetTitle>
+    <pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheetValue contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">5000</pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheetValue>
+  </pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheet>
+  <pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheet>
+    <pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheetTitle contextRef="CurrentDuration">Acompte rénovation</pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheetTitle>
+    <pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheetValue contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">10000</pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheetValue>
+  </pfs:AllocationOtherRightsCommitmentsNotReflectedBalanceSheet>
+  <pfs:ValuationRulesText contextRef="CurrentDuration">Stock évalués suivant le méthode FIFO</pfs:ValuationRulesText>
+  <pfs:ManagementReport>
+    <pfs:ManagementReportText contextRef="CurrentDuration">Rapport de gestion de ISIS sous forme de texte</pfs:ManagementReportText>
+  </pfs:ManagementReport>
+
+  <pfs:FinancialRelationshipsWithDirectorsManagersIndividualsBodiesCorporateWhoControlEnterpriseWithoutBeingAssociatedTherewithOtherEnterprisesControlledByThesePersonsGuaranteesProvidedTheirFavour contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">12000</pfs:FinancialRelationshipsWithDirectorsManagersIndividualsBodiesCorporateWhoControlEnterpriseWithoutBeingAssociatedTherewithOtherEnterprisesControlledByThesePersonsGuaranteesProvidedTheirFavour>
+  <pfs:ListEntitiesInWhichCompanyUnlimitedResponsibility>
+    <pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityName contextRef="CurrentDuration">Indusc</pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityName>
+    <pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityIdentifier>
+      <pfs-gcd:IdentifierName contextRef="CurrentDuration">Numéro d'entreprise</pfs-gcd:IdentifierName>
+      <pfs-gcd:IdentifierValue contextRef="CurrentDuration">BE0401799932</pfs-gcd:IdentifierValue>
+    </pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityIdentifier>
+    <pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityLegalForm>
+      <pfs-vl:XCode_LegalFormCode_014 contextRef="CurrentDuration">014</pfs-vl:XCode_LegalFormCode_014>
+    </pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityLegalForm>
+    <pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityAddress>
+      <pfs-gcd:AddressType>
+        <pfs-vl:XCode_AddressTypeCode_001 contextRef="CurrentDuration">001</pfs-vl:XCode_AddressTypeCode_001>
+      </pfs-gcd:AddressType>
+      <pfs-gcd:Street contextRef="CurrentDuration">Rue de Gaz</pfs-gcd:Street>
+      <pfs-gcd:Number contextRef="CurrentDuration">3192</pfs-gcd:Number>
+      <pfs-gcd:PostalCodeCity>
+        <pfs-vl:XCode_PostalCode_1050 contextRef="CurrentDuration">1050</pfs-vl:XCode_PostalCode_1050>
+      </pfs-gcd:PostalCodeCity>
+      <pfs-gcd:CountryCode>
+        <pfs-vl:XCode_CountryCode_BE contextRef="CurrentDuration">BE</pfs-vl:XCode_CountryCode_BE>
+      </pfs-gcd:CountryCode>
+    </pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityAddress>
+    <pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityPublicationCodeAnnualAccounts>
+      <pfs-vl:XCode_PublicationCode_A contextRef="CurrentDuration">A</pfs-vl:XCode_PublicationCode_A>
+    </pfs:ListEntitiesInWhichCompanyUnlimitedResponsibilityPublicationCodeAnnualAccounts>
+  </pfs:ListEntitiesInWhichCompanyUnlimitedResponsibility>
+  <pfs:OtherInformationsToDiscloseText contextRef="CurrentDuration">Informations non reprises précédemment</pfs:OtherInformationsToDiscloseText>
+  <pfs:AmountNatureFormConcerningLitigationOtherImportantCommitments>
+
+    <pfs:AmountNatureFormConcerningLitigationOtherImportantCommitmentsTitle contextRef="CurrentDuration">Jugement attendu sur vente </pfs:AmountNatureFormConcerningLitigationOtherImportantCommitmentsTitle>
+
+    <pfs:AmountNatureFormConcerningLitigationOtherImportantCommitmentsValue contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">500000</pfs:AmountNatureFormConcerningLitigationOtherImportantCommitmentsValue>
+  </pfs:AmountNatureFormConcerningLitigationOtherImportantCommitments>
+
+  <pfs:BriefDescriptionSupplementRetirementSurvivorsPensionPlanFavorPersonnelExecutivesEnterpriseMeasuresTakenEnterpriseCoverResultingChargesBriefDescription contextRef="CurrentDuration">Assurance groupe pour les administrateurs</pfs:BriefDescriptionSupplementRetirementSurvivorsPensionPlanFavorPersonnelExecutivesEnterpriseMeasuresTakenEnterpriseCoverResultingChargesBriefDescription>
+
+  <pfs:BriefDescriptionSupplementRetirementSurvivorsPensionPlanFavorPersonnelExecutivesEnterpriseMeasuresTakenEnterpriseCoverResultingChargesMeasuresTakenEnterpriseCoverResultingCharges contextRef="CurrentDuration">Versement sur Assura brussels</pfs:BriefDescriptionSupplementRetirementSurvivorsPensionPlanFavorPersonnelExecutivesEnterpriseMeasuresTakenEnterpriseCoverResultingChargesMeasuresTakenEnterpriseCoverResultingCharges>
+
+  <pfs:PensionsFundedByEnterpriseEstimatedAmountCommitmentsResultingEnterpriseFromPastServices contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">250000</pfs:PensionsFundedByEnterpriseEstimatedAmountCommitmentsResultingEnterpriseFromPastServices>
+  <pfs:PensionsFundedByEnterpriseMethodsEstimation contextRef="CurrentInstant">Calcul sur base des plans signés</pfs:PensionsFundedByEnterpriseMethodsEstimation>
+
+  <pfs:FinancialRelationshipsWithDirectorsManagersIndividualsBodiesCorporateWhoControlEnterpriseWithoutBeingAssociatedTherewithOtherEnterprisesControlledByThesePersonsAmountsReceivableFromThesePersons contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">8900</pfs:FinancialRelationshipsWithDirectorsManagersIndividualsBodiesCorporateWhoControlEnterpriseWithoutBeingAssociatedTherewithOtherEnterprisesControlledByThesePersonsAmountsReceivableFromThesePersons>
+
+  <pfs:FinancialRelationshipsWithDirectorsManagersIndividualsBodiesCorporateWhoControlEnterpriseWithoutBeingAssociatedTherewithOtherEnterprisesControlledByThesePersonsOtherSignificantCommitmentsUndertakenTheirFavour contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">8000</pfs:FinancialRelationshipsWithDirectorsManagersIndividualsBodiesCorporateWhoControlEnterpriseWithoutBeingAssociatedTherewithOtherEnterprisesControlledByThesePersonsOtherSignificantCommitmentsUndertakenTheirFavour>
+  <pfs:ImportantCommitmentsAffiliatedAssociatedEnterprises>
+    <pfs:ImportantCommitmentsAffiliatedAssociatedEnterprisesTitle contextRef="CurrentDuration">Terrain à la société Y</pfs:ImportantCommitmentsAffiliatedAssociatedEnterprisesTitle>
+    <pfs:ImportantCommitmentsAffiliatedAssociatedEnterprisesValue contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">1001</pfs:ImportantCommitmentsAffiliatedAssociatedEnterprisesValue>
+  </pfs:ImportantCommitmentsAffiliatedAssociatedEnterprises>
+
+  <pfs:FinancialRelationshipsWithDirectorsManagersIndividualsBodiesCorporateWhoControlEnterpriseWithoutBeingAssociatedTherewithOtherEnterprisesControlledByThesePersonsConditionsAmountsReceivableFromThesePersons contextRef="CurrentDuration">Taux nul pendant 10 ans</pfs:FinancialRelationshipsWithDirectorsManagersIndividualsBodiesCorporateWhoControlEnterpriseWithoutBeingAssociatedTherewithOtherEnterprisesControlledByThesePersonsConditionsAmountsReceivableFromThesePersons>
+  <pfs:OutstandingTaxesPayableDueTaxAuthorities contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">22518</pfs:OutstandingTaxesPayableDueTaxAuthorities>
+  <pfs:RemunerationSocialSecurityRecipientNationalSocialSecurityOffice contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">597</pfs:RemunerationSocialSecurityRecipientNationalSocialSecurityOffice>
+  <pfs:AmountsPayableGuaranteedBelgianPublicAuthorities contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">136458</pfs:AmountsPayableGuaranteedBelgianPublicAuthorities>
+
+  <pfs:AmountsInvestmentGrantsInterestPaidAllocatedPublicAuthoritiesInstitutions contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">9078</pfs:AmountsInvestmentGrantsInterestPaidAllocatedPublicAuthoritiesInstitutions>
+  <pfs:AccountantsReport>
+    <pfs:StructureAccountantsReport>
+      <pfs:AccountantsReportTitle contextRef="CurrentDuration">Rapport du commissaire à l'assemblée générale de la micro société</pfs:AccountantsReportTitle>
+      <pfs:AccountantsReportIntroduction contextRef="CurrentDuration">Nous vous faisons rapport conformément aux dispositions légales et statutaires</pfs:AccountantsReportIntroduction>
+      <pfs:AccountantOpinion>
+        <pfs:AccountantOpinionLastPeriod>
+          <pfs-vl:XCode_AccountantOpinionCode_1 contextRef="CurrentDuration">1</pfs-vl:XCode_AccountantOpinionCode_1>
+        </pfs:AccountantOpinionLastPeriod>
+        <pfs:AccountantOpinionExplanation contextRef="CurrentDuration">Validé suivant les informations disponibles</pfs:AccountantOpinionExplanation>
+      </pfs:AccountantOpinion>
+      <pfs:ComplementaryOpinion>
+        <pfs:ComplementaryOpinionExplanation contextRef="CurrentDuration">Le rapport de gestion traite des mentions requises par la loi et correspond aux informations reçues pendant notre mandat</pfs:ComplementaryOpinionExplanation>
+      </pfs:ComplementaryOpinion>
+      <pfs:PlaceDrawingUpAccountantReport contextRef="CurrentDuration">Namur</pfs:PlaceDrawingUpAccountantReport>
+      <pfs:DateDrawingUpAccountantReport contextRef="CurrentDuration">2017-06-24</pfs:DateDrawingUpAccountantReport>
+    </pfs:StructureAccountantsReport>
+  </pfs:AccountantsReport>
+  <pfs:CurrentInvestments contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">15</pfs:CurrentInvestments>
+  <pfs:NonRecurringOperatingIncome contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">30769</pfs:NonRecurringOperatingIncome>
+  <pfs:FinancialIncomeNonRecurringFinancialIncomeIncluded contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">14850</pfs:FinancialIncomeNonRecurringFinancialIncomeIncluded>
+  <pfs:FinancialChargesNonRecurringFinancialChargesIncluded contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">32436</pfs:FinancialChargesNonRecurringFinancialChargesIncluded>
+  <pfs:PartnersOwnersContributionLosses contextRef="CurrentDuration" decimals="INF" unitRef="U-EUR">32436</pfs:PartnersOwnersContributionLosses>
+  <pfs:ProvisionsDeferredTaxes contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">5397255</pfs:ProvisionsDeferredTaxes>
+  <pfs:ProvisionsEnvironmentalObligations contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">105547</pfs:ProvisionsEnvironmentalObligations>
+  <pfs:DeferredTaxes contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">5291708</pfs:DeferredTaxes>
+  <pfs:FinancialFixedAssets contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">5312963</pfs:FinancialFixedAssets>
+  <pfs:FinancialFixedAssetsRevaluationGains contextRef="CurrentInstant" decimals="INF" unitRef="U-EUR">5258674</pfs:FinancialFixedAssetsRevaluationGains>
+  <pfs:FinancialFixedAssetsRevaluationGains contextRef="PrecedingInstant" decimals="INF" unitRef="U-EUR">5258674</pfs:FinancialFixedAssetsRevaluationGains>
+  <pfs:RemunerationReport>
+  	<pfs:RemunerationReportText contextRef="CurrentDuration">This is the new remuneration report.</pfs:RemunerationReportText>
+  </pfs:RemunerationReport>
+  <pfs:MinutesOfPropertyConflictsOfInterestReport>
+	<pfs:MinutesOfPropertyConflictsOfInterestReportText contextRef="CurrentDuration">This is the new report for minutes of property conflicts of interest.</pfs:MinutesOfPropertyConflictsOfInterestReportText>
+  </pfs:MinutesOfPropertyConflictsOfInterestReport>
+  <pfs:OnlyPartnerSpecialReport>
+  	<pfs:OnlyPartnerSpecialReportText contextRef="CurrentDuration">This is the new special report only partner (PLC).</pfs:OnlyPartnerSpecialReportText>
+  </pfs:OnlyPartnerSpecialReport>
+  <pfs:SoleShareholderReport>
+  	<pfs:SoleShareholderReportText contextRef="CurrentDuration">This is the new sole shareholder report (LTD).</pfs:SoleShareholderReportText>
+  </pfs:SoleShareholderReport>
+  <pfs:SupervisoryBoardReport>
+  	<pfs:SupervisoryBoardReportText contextRef="CurrentDuration">This is the new report of the supervisory board.</pfs:SupervisoryBoardReportText>
+  </pfs:SupervisoryBoardReport>
+  <pfs:AnnualAccountReport>
+  	<pfs:AnnualAccountReportText contextRef="CurrentDuration">This is the new annual account(s) part.</pfs:AnnualAccountReportText>
+  </pfs:AnnualAccountReport>
+  <pfs:OtherDocumentsReport>
+  	<pfs:OtherDocumentsReportText contextRef="CurrentDuration">This is the new other documents part.</pfs:OtherDocumentsReportText>
+  </pfs:OtherDocumentsReport>
+</xbrli:xbrl>

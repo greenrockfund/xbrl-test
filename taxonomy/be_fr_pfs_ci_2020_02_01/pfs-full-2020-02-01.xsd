@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:pfs="http://www.nbb.be/be/fr/pfs/ci/2020-02-01" xmlns:pfs-full="http://www.nbb.be/be/fr/pfs/ci/full/2020-02-01" xmlns:pfs-gcd="http://www.nbb.be/be/fr/pfs/ci/gcd/2020-02-01" xmlns:pfs-vl="http://www.nbb.be/be/fr/pfs/ci/vl/2020-02-01" xmlns:pfs-dt="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" targetNamespace="http://www.nbb.be/be/fr/pfs/ci/full/2020-02-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-full-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-full-vl-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullIdentifyingData" id="FullIdentifyingData">
+				<link:definition>Full identifying data</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullAdministrators" id="FullAdministrators">
+				<link:definition>Full administrators</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullBalanceSheet" id="FullBalanceSheet">
+				<link:definition>Full balance sheet</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullIncomeStatement" id="FullIncomeStatement">
+				<link:definition>Full income statement</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullAppropriationsWithdrawings" id="FullAppropriationsWithdrawings">
+				<link:definition>Full appropriations withdrawings</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullDisclosures" id="FullDisclosures">
+				<link:definition>Full disclosures</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullManagementReport" id="FullManagementReport">
+				<link:definition>Full management report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullAccountantsReport" id="FullAccountantsReport">
+				<link:definition>Full accountants report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullPaymentsGovernmentsReport" id="FullPaymentsGovernmentsReport">
+				<link:definition>Full payments governments report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullSocialBalanceSheet" id="FullSocialBalanceSheet">
+				<link:definition>Full social balance sheet</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullRemunerationReport" id="FullRemunerationReport">
+				<link:definition>Full remuneration report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullOnlyPartnerSpecialReport" id="FullOnlyPartnerSpecialReport">
+				<link:definition>Full only partner special report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullSoleShareholderReport" id="FullSoleShareholderReport">
+				<link:definition>Full sole shareholder report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullSupervisoryBoardReport" id="FullSupervisoryBoardReport">
+				<link:definition>Full supervisory board report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullAnnualAccountReport" id="FullAnnualAccountReport">
+				<link:definition>Full annual account report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/FullOtherDocumentsReport" id="FullOtherDocumentsReport">
+				<link:definition>Full other documents report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl-instance-2003-12-31.xsd"/>
+</schema>

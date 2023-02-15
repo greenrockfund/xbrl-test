@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" >
+	<labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+		<loc xlink:label="GlobalCommonDocument_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_GlobalCommonDocument"/>
+		<labelArc xlink:from="GlobalCommonDocument_loc" xlink:to="GlobalCommonDocument_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="GlobalCommonDocument_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Signalétique général</label>
+		<label xlink:label="GlobalCommonDocument_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Signalétique général</label>
+		<label xlink:label="GlobalCommonDocument_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Identificatiegegevens en inlichtingen</label>
+		<label xlink:label="GlobalCommonDocument_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Identificatiegegevens en inlichtingen</label>
+		<label xlink:label="GlobalCommonDocument_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Angaben</label>
+		<label xlink:label="GlobalCommonDocument_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Angaben</label>
+		<label xlink:label="GlobalCommonDocument_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Global common document</label>
+		<label xlink:label="GlobalCommonDocument_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Global common document</label>
+		<loc xlink:label="EntityInformation_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityInformation"/>
+		<labelArc xlink:from="EntityInformation_loc" xlink:to="EntityInformation_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Signalétique de l'entreprise</label>
+		<label xlink:label="EntityInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Signalétique de l'entreprise</label>
+		<label xlink:label="EntityInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Identificatiegegevens van de onderneming</label>
+		<label xlink:label="EntityInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Identificatiegegevens van de onderneming</label>
+		<label xlink:label="EntityInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Informationen hinsichtlich des Unternehmens</label>
+		<label xlink:label="EntityInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Informationen hinsichtlich des Unternehmens</label>
+		<label xlink:label="EntityInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity information</label>
+		<label xlink:label="EntityInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity information</label>
+		<loc xlink:label="EntityName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityName"/>
+		<labelArc xlink:from="EntityName_loc" xlink:to="EntityName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Dénomination</label>
+		<label xlink:label="EntityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Dénomination</label>
+		<label xlink:label="EntityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Naam</label>
+		<label xlink:label="EntityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Naam</label>
+		<label xlink:label="EntityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Name</label>
+		<label xlink:label="EntityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Name</label>
+		<label xlink:label="EntityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity name</label>
+		<label xlink:label="EntityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity name</label>
+		<loc xlink:label="EntityCurrentLegalName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityCurrentLegalName"/>
+		<labelArc xlink:from="EntityCurrentLegalName_loc" xlink:to="EntityCurrentLegalName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityCurrentLegalName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Dénomination légale</label>
+		<label xlink:label="EntityCurrentLegalName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Dénomination légale</label>
+		<label xlink:label="EntityCurrentLegalName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Wettelijke benaming</label>
+		<label xlink:label="EntityCurrentLegalName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Wettelijke benaming</label>
+		<label xlink:label="EntityCurrentLegalName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Rechtsbezeichnung</label>
+		<label xlink:label="EntityCurrentLegalName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Rechtsbezeichnung</label>
+		<label xlink:label="EntityCurrentLegalName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity current legal name</label>
+		<label xlink:label="EntityCurrentLegalName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity current legal name</label>
+		<loc xlink:label="EntityTradingName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityTradingName"/>
+		<labelArc xlink:from="EntityTradingName_loc" xlink:to="EntityTradingName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityTradingName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Dénomination commerciale</label>
+		<label xlink:label="EntityTradingName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Dénomination commerciale</label>
+		<label xlink:label="EntityTradingName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Handelsnaam</label>
+		<label xlink:label="EntityTradingName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Handelsnaam</label>
+		<label xlink:label="EntityTradingName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Handelsname</label>
+		<label xlink:label="EntityTradingName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Handelsname</label>
+		<label xlink:label="EntityTradingName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity trading name</label>
+		<label xlink:label="EntityTradingName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity trading name</label>
+		<loc xlink:label="EntityDateNameChange_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityDateNameChange"/>
+		<labelArc xlink:from="EntityDateNameChange_loc" xlink:to="EntityDateNameChange_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityDateNameChange_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Date de modification de dénomination</label>
+		<label xlink:label="EntityDateNameChange_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Date de modification de dénomination</label>
+		<label xlink:label="EntityDateNameChange_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Datum van naamsverandering</label>
+		<label xlink:label="EntityDateNameChange_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Datum van naamsverandering</label>
+		<label xlink:label="EntityDateNameChange_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Datum der Namensänderung</label>
+		<label xlink:label="EntityDateNameChange_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Datum der Namensänderung</label>
+		<label xlink:label="EntityDateNameChange_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Date name changed</label>
+		<label xlink:label="EntityDateNameChange_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Date name changed</label>
+		<loc xlink:label="EntityIdentifier_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityIdentifier"/>
+		<labelArc xlink:from="EntityIdentifier_loc" xlink:to="EntityIdentifier_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Identifiant de l'entreprise</label>
+		<label xlink:label="EntityIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Numéro d'entreprise</label>
+		<label xlink:label="EntityIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Identificerend nummer van de onderneming</label>
+		<label xlink:label="EntityIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Ondernemingsnummer</label>
+		<label xlink:label="EntityIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Identifikationsnummer des Unternehmens</label>
+		<label xlink:label="EntityIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Unternehmensnummer</label>
+		<label xlink:label="EntityIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity identifier</label>
+		<label xlink:label="EntityIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity number</label>
+		<loc xlink:label="IdentifierName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_IdentifierName"/>
+		<labelArc xlink:from="IdentifierName_loc" xlink:to="IdentifierName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="IdentifierName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Nom de l'identifiant de l'entreprise</label>
+		<label xlink:label="IdentifierName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Type de numéro</label>
+		<label xlink:label="IdentifierName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Benaming van het identificerend nummer van de onderneming</label>
+		<label xlink:label="IdentifierName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Type nummer</label>
+		<label xlink:label="IdentifierName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Bezeichnung der Identifikationsnummer des Unternehmens</label>
+		<label xlink:label="IdentifierName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Bezeichnung</label>
+		<label xlink:label="IdentifierName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Name of entity identifier</label>
+		<label xlink:label="IdentifierName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Kind of number</label>
+		<loc xlink:label="IdentifierValue_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_IdentifierValue"/>
+		<labelArc xlink:from="IdentifierValue_loc" xlink:to="IdentifierValue_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="IdentifierValue_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Valeur de l'identifiant de l'entreprise</label>
+		<label xlink:label="IdentifierValue_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Valeur</label>
+		<label xlink:label="IdentifierValue_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Opgave van het identificerend nummer van de onderneming</label>
+		<label xlink:label="IdentifierValue_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Opgave nummer</label>
+		<label xlink:label="IdentifierValue_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Angabe der Identifikationsnummer des Unternehmens</label>
+		<label xlink:label="IdentifierValue_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Angabe</label>
+		<label xlink:label="IdentifierValue_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Value of entity identifier</label>
+		<label xlink:label="IdentifierValue_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Value</label>
+		<loc xlink:label="EntityForm_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityForm"/>
+		<labelArc xlink:from="EntityForm_loc" xlink:to="EntityForm_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityForm_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Forme juridique</label>
+		<label xlink:label="EntityForm_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Forme juridique</label>
+		<label xlink:label="EntityForm_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Rechtsvorm</label>
+		<label xlink:label="EntityForm_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Rechtsvorm</label>
+		<label xlink:label="EntityForm_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Rechtsform</label>
+		<label xlink:label="EntityForm_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Rechtsform</label>
+		<label xlink:label="EntityForm_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity legal form</label>
+		<label xlink:label="EntityForm_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity legal form</label>
+		<loc xlink:label="LegalFormOther_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_LegalFormOther"/>
+		<labelArc xlink:from="LegalFormOther_loc" xlink:to="LegalFormOther_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="LegalFormOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Forme juridique - autre</label>
+		<label xlink:label="LegalFormOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Autre</label>
+		<label xlink:label="LegalFormOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Rechtsvorm - andere</label>
+		<label xlink:label="LegalFormOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Andere</label>
+		<label xlink:label="LegalFormOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Rechtsform - Sonstiges</label>
+		<label xlink:label="LegalFormOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Sonstiges</label>
+		<label xlink:label="LegalFormOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity legal form other</label>
+		<label xlink:label="LegalFormOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Other</label>
+		<loc xlink:label="EntityAddress_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityAddress"/>
+		<labelArc xlink:from="EntityAddress_loc" xlink:to="EntityAddress_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Adresse de l'entreprise</label>
+		<label xlink:label="EntityAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Adresse</label>
+		<label xlink:label="EntityAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Adres van de onderneming</label>
+		<label xlink:label="EntityAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Adres</label>
+		<label xlink:label="EntityAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Anschrift des Unternehmens</label>
+		<label xlink:label="EntityAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Adresse</label>
+		<label xlink:label="EntityAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity address</label>
+		<label xlink:label="EntityAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Address</label>
+		<loc xlink:label="AddressType_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_AddressType"/>
+		<labelArc xlink:from="AddressType_loc" xlink:to="AddressType_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="AddressType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Type d'adresse</label>
+		<label xlink:label="AddressType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Type d'adresse</label>
+		<label xlink:label="AddressType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Aard adres</label>
+		<label xlink:label="AddressType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Aard adres</label>
+		<label xlink:label="AddressType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Art der Anschrift</label>
+		<label xlink:label="AddressType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Art der Anschrift</label>
+		<label xlink:label="AddressType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Address type</label>
+		<label xlink:label="AddressType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Address type</label>
+		<loc xlink:label="AddressTypeOther_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_AddressTypeOther"/>
+		<labelArc xlink:from="AddressTypeOther_loc" xlink:to="AddressTypeOther_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="AddressTypeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Type d'adresse - autre</label>
+		<label xlink:label="AddressTypeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Autre</label>
+		<label xlink:label="AddressTypeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Aard adres - andere</label>
+		<label xlink:label="AddressTypeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Andere</label>
+		<label xlink:label="AddressTypeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Art der Anschrift - Sonstiges</label>
+		<label xlink:label="AddressTypeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Sonstiges</label>
+		<label xlink:label="AddressTypeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Address type other</label>
+		<label xlink:label="AddressTypeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Other</label>
+		<loc xlink:label="Street_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_Street"/>
+		<labelArc xlink:from="Street_loc" xlink:to="Street_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="Street_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Rue</label>
+		<label xlink:label="Street_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Rue</label>
+		<label xlink:label="Street_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Straat</label>
+		<label xlink:label="Street_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Straat</label>
+		<label xlink:label="Street_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Straße</label>
+		<label xlink:label="Street_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Straße</label>
+		<label xlink:label="Street_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Street</label>
+		<label xlink:label="Street_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Street</label>
+		<loc xlink:label="Number_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_Number"/>
+		<labelArc xlink:from="Number_loc" xlink:to="Number_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="Number_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Numéro</label>
+		<label xlink:label="Number_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">N°</label>
+		<label xlink:label="Number_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Nummer</label>
+		<label xlink:label="Number_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Nr</label>
+		<label xlink:label="Number_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Nummer</label>
+		<label xlink:label="Number_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Nr</label>
+		<label xlink:label="Number_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Number</label>
+		<label xlink:label="Number_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Nr</label>
+		<loc xlink:label="Box_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_Box"/>
+		<labelArc xlink:from="Box_loc" xlink:to="Box_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="Box_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Boîte</label>
+		<label xlink:label="Box_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Boîte</label>
+		<label xlink:label="Box_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Bus</label>
+		<label xlink:label="Box_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Bus</label>
+		<label xlink:label="Box_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Briefkasten</label>
+		<label xlink:label="Box_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Briefkasten</label>
+		<label xlink:label="Box_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Box</label>
+		<label xlink:label="Box_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Box</label>
+		<loc xlink:label="PostalCodeCity_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_PostalCodeCity"/>
+		<labelArc xlink:from="PostalCodeCity_loc" xlink:to="PostalCodeCity_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="PostalCodeCity_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Code postal et commune</label>
+		<label xlink:label="PostalCodeCity_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Code postal et commune</label>
+		<label xlink:label="PostalCodeCity_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Postcode en gemeente</label>
+		<label xlink:label="PostalCodeCity_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Postcode en gemeente</label>
+		<label xlink:label="PostalCodeCity_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Postleitzahl - Gemeinde</label>
+		<label xlink:label="PostalCodeCity_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Postleitzahl - Gemeinde</label>
+		<label xlink:label="PostalCodeCity_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Postal code and city</label>
+		<label xlink:label="PostalCodeCity_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Postal code and city</label>
+		<loc xlink:label="PostalCodeCityOther_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_PostalCodeCityOther"/>
+		<labelArc xlink:from="PostalCodeCityOther_loc" xlink:to="PostalCodeCityOther_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="PostalCodeCityOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Autres code postal et commune</label>
+		<label xlink:label="PostalCodeCityOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Autres</label>
+		<label xlink:label="PostalCodeCityOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Andere postcode en gemeente</label>
+		<label xlink:label="PostalCodeCityOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Andere</label>
+		<label xlink:label="PostalCodeCityOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Sonstiges Postleitzahl - Gemeinde</label>
+		<label xlink:label="PostalCodeCityOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Sonstiges</label>
+		<label xlink:label="PostalCodeCityOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Postal code and city other</label>
+		<label xlink:label="PostalCodeCityOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Others</label>
+		<loc xlink:label="PostalCodeOther_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_PostalCodeOther"/>
+		<labelArc xlink:from="PostalCodeOther_loc" xlink:to="PostalCodeOther_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="PostalCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Code postal - autre</label>
+		<label xlink:label="PostalCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Autre</label>
+		<label xlink:label="PostalCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Postcode - andere</label>
+		<label xlink:label="PostalCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Andere</label>
+		<label xlink:label="PostalCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Postleitzahl - Sonstiges</label>
+		<label xlink:label="PostalCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Sonstiges</label>
+		<label xlink:label="PostalCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Postal code other</label>
+		<label xlink:label="PostalCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Other</label>
+		<loc xlink:label="City_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_City"/>
+		<labelArc xlink:from="City_loc" xlink:to="City_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="City_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Commune</label>
+		<label xlink:label="City_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Commune</label>
+		<label xlink:label="City_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Gemeente</label>
+		<label xlink:label="City_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Gemeente</label>
+		<label xlink:label="City_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Gemeinde</label>
+		<label xlink:label="City_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Gemeinde</label>
+		<label xlink:label="City_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">City</label>
+		<label xlink:label="City_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">City</label>
+		<loc xlink:label="CountryCode_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_CountryCode"/>
+		<labelArc xlink:from="CountryCode_loc" xlink:to="CountryCode_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="CountryCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Code pays</label>
+		<label xlink:label="CountryCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Pays</label>
+		<label xlink:label="CountryCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Landcode</label>
+		<label xlink:label="CountryCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Land</label>
+		<label xlink:label="CountryCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Landeskode</label>
+		<label xlink:label="CountryCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Land</label>
+		<label xlink:label="CountryCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Country code</label>
+		<label xlink:label="CountryCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Country</label>
+		<loc xlink:label="CountryCodeOther_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_CountryCodeOther"/>
+		<labelArc xlink:from="CountryCodeOther_loc" xlink:to="CountryCodeOther_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="CountryCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Code pays - autre</label>
+		<label xlink:label="CountryCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Autre</label>
+		<label xlink:label="CountryCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Landcode - andere</label>
+		<label xlink:label="CountryCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Andere</label>
+		<label xlink:label="CountryCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Landeskode - Sonstiges</label>
+		<label xlink:label="CountryCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Sonstiges</label>
+		<label xlink:label="CountryCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Country code other</label>
+		<label xlink:label="CountryCodeOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Other</label>
+		<loc xlink:label="CommercialCourt_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_CommercialCourt"/>
+		<labelArc xlink:from="CommercialCourt_loc" xlink:to="CommercialCourt_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="CommercialCourt_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Siège du tribunal dans le ressort territorial duquel l'entreprise a son siège social</label>
+		<label xlink:label="CommercialCourt_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Registre des personnes morales (RPM) - Tribunal de l'entreprise de</label>
+		<label xlink:label="CommercialCourt_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Rechtbank van koophandel van het rechtsgebied waarin de maatschappelijke zetel van de onderneming gevestigd is</label>
+		<label xlink:label="CommercialCourt_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Rechtspersonenregister (RPR) - Ondernemingsrechtbank van</label>
+		<label xlink:label="CommercialCourt_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Sitz des Gerichts, in dessen Zuständigkeitsbereich das Unternehmen seinen Geschäftssitz hat</label>
+		<label xlink:label="CommercialCourt_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Register der Juristischen Personen (RJP) - Unternehmensgericht zu</label>
+		<label xlink:label="CommercialCourt_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Commercial court</label>
+		<label xlink:label="CommercialCourt_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entities register - Business Court of</label>
+		<loc xlink:label="CommercialCourtOther_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_CommercialCourtOther"/>
+		<labelArc xlink:from="CommercialCourtOther_loc" xlink:to="CommercialCourtOther_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="CommercialCourtOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Siège du tribunal dans le ressort territorial duquel l'entreprise a son siège social - autre</label>
+		<label xlink:label="CommercialCourtOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Autre</label>
+		<label xlink:label="CommercialCourtOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Rechtbank van koophandel van het rechtsgebied waarin de maatschappelijke zetel van de onderneming gevestigd is - andere</label>
+		<label xlink:label="CommercialCourtOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Andere</label>
+		<label xlink:label="CommercialCourtOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Sitz des Gerichts, in dessen Zuständigkeitsbereich das Unternehmen seinen Geschäftssitz hat - Sonstiges</label>
+		<label xlink:label="CommercialCourtOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Sonstiges</label>
+		<label xlink:label="CommercialCourtOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Commercial court other</label>
+		<label xlink:label="CommercialCourtOther_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Other</label>
+		<loc xlink:label="EntityPhoneFaxNumber_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityPhoneFaxNumber"/>
+		<labelArc xlink:from="EntityPhoneFaxNumber_loc" xlink:to="EntityPhoneFaxNumber_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Téléphone ou Fax de l'entreprise</label>
+		<label xlink:label="EntityPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Téléphone ou Fax de l'entreprise</label>
+		<label xlink:label="EntityPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Telefoonnummer of Faxnummer van de onderneming</label>
+		<label xlink:label="EntityPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Telefoonnummer of Faxnummer van de onderneming</label>
+		<label xlink:label="EntityPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Telefon- oder Faxnummer des Unternehmens</label>
+		<label xlink:label="EntityPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Telefon- oder Faxnummer des Unternehmens</label>
+		<label xlink:label="EntityPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity phone or Fax</label>
+		<label xlink:label="EntityPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity phone or Fax</label>
+		<loc xlink:label="PhoneFaxNumber_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_PhoneFaxNumber"/>
+		<labelArc xlink:from="PhoneFaxNumber_loc" xlink:to="PhoneFaxNumber_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="PhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Description du téléphone ou fax</label>
+		<label xlink:label="PhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Description du téléphone ou fax</label>
+		<label xlink:label="PhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Aanduiding of het een telefoon- dan wel een faxnummer betreft</label>
+		<label xlink:label="PhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Aanduiding of het een telefoon- dan wel een faxnummer betreft</label>
+		<label xlink:label="PhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Angaben zum Telefon oder Fax</label>
+		<label xlink:label="PhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Angaben zum Telefon oder Fax</label>
+		<label xlink:label="PhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Description of the phone or fax number</label>
+		<label xlink:label="PhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Description of the phone or fax number</label>
+		<loc xlink:label="CountryRegion_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_CountryRegion"/>
+		<labelArc xlink:from="CountryRegion_loc" xlink:to="CountryRegion_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="CountryRegion_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Pays du téléphone ou fax</label>
+		<label xlink:label="CountryRegion_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Pays du téléphone ou fax</label>
+		<label xlink:label="CountryRegion_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Land telefoonnummer of faxnummer</label>
+		<label xlink:label="CountryRegion_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Land telefoonnummer of faxnummer</label>
+		<label xlink:label="CountryRegion_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Land der Telefonnummer oder Faxnummer</label>
+		<label xlink:label="CountryRegion_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Land der Telefonnummer oder Faxnummer</label>
+		<label xlink:label="CountryRegion_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Country or region of the phone or fax number</label>
+		<label xlink:label="CountryRegion_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Country or region of the phone or fax number</label>
+		<loc xlink:label="CityAreaCode_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_CityAreaCode"/>
+		<labelArc xlink:from="CityAreaCode_loc" xlink:to="CityAreaCode_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="CityAreaCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Préfixe du téléphone ou fax</label>
+		<label xlink:label="CityAreaCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Préfixe du téléphone ou fax</label>
+		<label xlink:label="CityAreaCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Zonenummer telefoon of fax</label>
+		<label xlink:label="CityAreaCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Zonenummer telefoon of fax</label>
+		<label xlink:label="CityAreaCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Vorwahl der Telefonnummer oder Faxnummer</label>
+		<label xlink:label="CityAreaCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Vorwahl der Telefonnummer oder Faxnummer</label>
+		<label xlink:label="CityAreaCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Area code of the phone of fax number</label>
+		<label xlink:label="CityAreaCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Area code of the phone of fax number</label>
+		<loc xlink:label="LocalPhoneNumber_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_LocalPhoneNumber"/>
+		<labelArc xlink:from="LocalPhoneNumber_loc" xlink:to="LocalPhoneNumber_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="LocalPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Numéro local</label>
+		<label xlink:label="LocalPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Numéro local</label>
+		<label xlink:label="LocalPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Lokaal telefoonnummer</label>
+		<label xlink:label="LocalPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Lokaal telefoonnummer</label>
+		<label xlink:label="LocalPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Ortsnummer</label>
+		<label xlink:label="LocalPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Ortsnummer</label>
+		<label xlink:label="LocalPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Local phone number</label>
+		<label xlink:label="LocalPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Local phone number</label>
+		<loc xlink:label="ExtensionPhoneNumber_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ExtensionPhoneNumber"/>
+		<labelArc xlink:from="ExtensionPhoneNumber_loc" xlink:to="ExtensionPhoneNumber_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ExtensionPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Extension du téléphone</label>
+		<label xlink:label="ExtensionPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Extension du téléphone</label>
+		<label xlink:label="ExtensionPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Toestelnummer</label>
+		<label xlink:label="ExtensionPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Toestelnummer</label>
+		<label xlink:label="ExtensionPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Durchwahl</label>
+		<label xlink:label="ExtensionPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Durchwahl</label>
+		<label xlink:label="ExtensionPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Phone extension</label>
+		<label xlink:label="ExtensionPhoneNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Phone extension</label>
+		<loc xlink:label="EntityEmail_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityEmail"/>
+		<labelArc xlink:from="EntityEmail_loc" xlink:to="EntityEmail_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">E-mail</label>
+		<label xlink:label="EntityEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">E-mail</label>
+		<label xlink:label="EntityEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">E-mail</label>
+		<label xlink:label="EntityEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">E-mail</label>
+		<label xlink:label="EntityEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">E-Mail</label>
+		<label xlink:label="EntityEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">E-Mail</label>
+		<label xlink:label="EntityEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">E-mail</label>
+		<label xlink:label="EntityEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">E-mail</label>
+		<loc xlink:label="EmailAddress_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EmailAddress"/>
+		<labelArc xlink:from="EmailAddress_loc" xlink:to="EmailAddress_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EmailAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Adresse E-mail</label>
+		<label xlink:label="EmailAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Adresse E-mail</label>
+		<label xlink:label="EmailAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">E-mailadres</label>
+		<label xlink:label="EmailAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">E-mail adres</label>
+		<label xlink:label="EmailAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">E-Mail-Adresse</label>
+		<label xlink:label="EmailAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">E-Mail-Adresse</label>
+		<label xlink:label="EmailAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">E-mail address</label>
+		<label xlink:label="EmailAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">E-mail address</label>
+		<loc xlink:label="EntityWebSite_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityWebSite"/>
+		<labelArc xlink:from="EntityWebSite_loc" xlink:to="EntityWebSite_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityWebSite_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Adresse Internet</label>
+		<label xlink:label="EntityWebSite_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Adresse Internet</label>
+		<label xlink:label="EntityWebSite_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Website</label>
+		<label xlink:label="EntityWebSite_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Internetadres</label>
+		<label xlink:label="EntityWebSite_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Website</label>
+		<label xlink:label="EntityWebSite_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Internetadresse</label>
+		<label xlink:label="EntityWebSite_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity website</label>
+		<label xlink:label="EntityWebSite_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Website</label>
+		<loc xlink:label="WebSiteURL_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_WebSiteURL"/>
+		<labelArc xlink:from="WebSiteURL_loc" xlink:to="WebSiteURL_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="WebSiteURL_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Adresse URL</label>
+		<label xlink:label="WebSiteURL_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Adresse URL</label>
+		<label xlink:label="WebSiteURL_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">URL van de website</label>
+		<label xlink:label="WebSiteURL_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">URL van de website</label>
+		<label xlink:label="WebSiteURL_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">URL-Adresse der Website</label>
+		<label xlink:label="WebSiteURL_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">URL-Adresse der Website</label>
+		<label xlink:label="WebSiteURL_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Website URL</label>
+		<label xlink:label="WebSiteURL_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Website URL</label>
+		<loc xlink:label="WebSiteDescription_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_WebSiteDescription"/>
+		<labelArc xlink:from="WebSiteDescription_loc" xlink:to="WebSiteDescription_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="WebSiteDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Adresse URL - Description</label>
+		<label xlink:label="WebSiteDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Adresse URL - Description</label>
+		<label xlink:label="WebSiteDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Specifiëring van de website</label>
+		<label xlink:label="WebSiteDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Specifiëring van de website</label>
+		<label xlink:label="WebSiteDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">URL-Adresse - Beschreibung</label>
+		<label xlink:label="WebSiteDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">URL-Adresse - Beschreibung</label>
+		<label xlink:label="WebSiteDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Website description</label>
+		<label xlink:label="WebSiteDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Website description</label>
+		<loc xlink:label="EntityIndustrySectorCodeIdentifier_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityIndustrySectorCodeIdentifier"/>
+		<labelArc xlink:from="EntityIndustrySectorCodeIdentifier_loc" xlink:to="EntityIndustrySectorCodeIdentifier_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityIndustrySectorCodeIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Activité sectorielle</label>
+		<label xlink:label="EntityIndustrySectorCodeIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Activité sectorielle</label>
+		<label xlink:label="EntityIndustrySectorCodeIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Bedrijfssector</label>
+		<label xlink:label="EntityIndustrySectorCodeIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Bedrijfssector</label>
+		<label xlink:label="EntityIndustrySectorCodeIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Unternehmenssektor</label>
+		<label xlink:label="EntityIndustrySectorCodeIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Unternehmenssektor</label>
+		<label xlink:label="EntityIndustrySectorCodeIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity industry</label>
+		<label xlink:label="EntityIndustrySectorCodeIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity industry</label>
+		<loc xlink:label="DepositDateLastDeed_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DepositDateLastDeed"/>
+		<labelArc xlink:from="DepositDateLastDeed_loc" xlink:to="DepositDateLastDeed_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DepositDateLastDeed_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Date du dernier acte déposé</label>
+		<label xlink:label="DepositDateLastDeed_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Date du dépôt de l'acte constitutif ou du document le plus récent mentionnant la date de publication des actes constitutif et modificatif(s) des statuts.</label>
+		<label xlink:label="DepositDateLastDeed_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Datum van de laatst gepubliceerde akte</label>
+		<label xlink:label="DepositDateLastDeed_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Datum van de neerlegging van de oprichtingsakte OF van het recentste stuk dat de datum van bekendmaking van de oprichtingsakte en van de akte tot statutenwijziging vermeldt.</label>
+		<label xlink:label="DepositDateLastDeed_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Datum der letzten veröffentlichten Akte</label>
+		<label xlink:label="DepositDateLastDeed_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Datum der Hinterlegung der Errichtungsurkunde oder der letzten Urkunde, die das Veröffentlichungsdatum der Errichtungs- bzw. Änderungsurkunde der Satzungen anführt.</label>
+		<label xlink:label="DepositDateLastDeed_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Deposit date of last deed</label>
+		<label xlink:label="DepositDateLastDeed_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Deposit date of last deed</label>
+		<loc xlink:label="EntityPublicListingInformation_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityPublicListingInformation"/>
+		<labelArc xlink:from="EntityPublicListingInformation_loc" xlink:to="EntityPublicListingInformation_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityPublicListingInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Information relative à la cotation</label>
+		<label xlink:label="EntityPublicListingInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Information relative à la cotation</label>
+		<label xlink:label="EntityPublicListingInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Inlichtingen betreffende beursnoteringen</label>
+		<label xlink:label="EntityPublicListingInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Inlichtingen betreffende beursnoteringen</label>
+		<label xlink:label="EntityPublicListingInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Angaben zur Börsennotierung</label>
+		<label xlink:label="EntityPublicListingInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Angaben zur Börsennotierung</label>
+		<label xlink:label="EntityPublicListingInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity public listing information</label>
+		<label xlink:label="EntityPublicListingInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity public listing information</label>
+		<loc xlink:label="ExchangeName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ExchangeName"/>
+		<labelArc xlink:from="ExchangeName_loc" xlink:to="ExchangeName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ExchangeName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Marché de cotation</label>
+		<label xlink:label="ExchangeName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Marché de cotation</label>
+		<label xlink:label="ExchangeName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Beursnaam</label>
+		<label xlink:label="ExchangeName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Beursnaam</label>
+		<label xlink:label="ExchangeName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Name der Börse</label>
+		<label xlink:label="ExchangeName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Name der Börse</label>
+		<label xlink:label="ExchangeName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Exchange name</label>
+		<label xlink:label="ExchangeName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Exchange name</label>
+		<loc xlink:label="TradingSymbol_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_TradingSymbol"/>
+		<labelArc xlink:from="TradingSymbol_loc" xlink:to="TradingSymbol_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="TradingSymbol_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Symbole de cotation</label>
+		<label xlink:label="TradingSymbol_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Symbole de cotation</label>
+		<label xlink:label="TradingSymbol_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Beursnoteringsymbool</label>
+		<label xlink:label="TradingSymbol_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Beursnoteringsymbool</label>
+		<label xlink:label="TradingSymbol_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Börsennotierungssymbol</label>
+		<label xlink:label="TradingSymbol_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Börsennotierungssymbol</label>
+		<label xlink:label="TradingSymbol_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Trading symbol</label>
+		<label xlink:label="TradingSymbol_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Trading symbol</label>
+		<loc xlink:label="IssueTypeSecurityName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_IssueTypeSecurityName"/>
+		<labelArc xlink:from="IssueTypeSecurityName_loc" xlink:to="IssueTypeSecurityName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="IssueTypeSecurityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Nature du titre coté</label>
+		<label xlink:label="IssueTypeSecurityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Nature du titre coté</label>
+		<label xlink:label="IssueTypeSecurityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Aard van het genoteerde effect</label>
+		<label xlink:label="IssueTypeSecurityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Aard van het genoteerde effect</label>
+		<label xlink:label="IssueTypeSecurityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Art des notierten Wertpapiers</label>
+		<label xlink:label="IssueTypeSecurityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Art des notierten Wertpapiers</label>
+		<label xlink:label="IssueTypeSecurityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Issue type or security name</label>
+		<label xlink:label="IssueTypeSecurityName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Issue type or security name</label>
+		<loc xlink:label="IssueTypeSecurityDescription_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_IssueTypeSecurityDescription"/>
+		<labelArc xlink:from="IssueTypeSecurityDescription_loc" xlink:to="IssueTypeSecurityDescription_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="IssueTypeSecurityDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Description du titre coté</label>
+		<label xlink:label="IssueTypeSecurityDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Description du titre coté</label>
+		<label xlink:label="IssueTypeSecurityDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Omschrijving van het genoteerde effect</label>
+		<label xlink:label="IssueTypeSecurityDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Omschrijving van het genoteerde effect</label>
+		<label xlink:label="IssueTypeSecurityDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Beschreibung des notierten Wertpapiers</label>
+		<label xlink:label="IssueTypeSecurityDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Beschreibung des notierten Wertpapiers</label>
+		<label xlink:label="IssueTypeSecurityDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Issue type or security description</label>
+		<label xlink:label="IssueTypeSecurityDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Issue type or security description</label>
+		<loc xlink:label="EntityContact_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityContact"/>
+		<labelArc xlink:from="EntityContact_loc" xlink:to="EntityContact_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Contacts dans l'entreprise</label>
+		<label xlink:label="EntityContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Contacts dans l'entreprise</label>
+		<label xlink:label="EntityContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Contactpersonen binnen de onderneming</label>
+		<label xlink:label="EntityContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Contactpersonen binnen de onderneming</label>
+		<label xlink:label="EntityContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Kontaktpersonen im Unternehmen</label>
+		<label xlink:label="EntityContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Kontaktpersonen im Unternehmen</label>
+		<label xlink:label="EntityContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity contact</label>
+		<label xlink:label="EntityContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity contact</label>
+		<loc xlink:label="ContactType_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ContactType"/>
+		<labelArc xlink:from="ContactType_loc" xlink:to="ContactType_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Type de contact</label>
+		<label xlink:label="ContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Type de contact</label>
+		<label xlink:label="ContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Type contact</label>
+		<label xlink:label="ContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Type contact</label>
+		<label xlink:label="ContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Art des Kontakts</label>
+		<label xlink:label="ContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Art des Kontakts</label>
+		<label xlink:label="ContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Type of contact</label>
+		<label xlink:label="ContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Type of contact</label>
+		<loc xlink:label="ContactName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ContactName"/>
+		<labelArc xlink:from="ContactName_loc" xlink:to="ContactName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ContactName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Nom du contact</label>
+		<label xlink:label="ContactName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Nom</label>
+		<label xlink:label="ContactName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Naam van de contactpersoon</label>
+		<label xlink:label="ContactName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Naam</label>
+		<label xlink:label="ContactName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Name der Kontaktperson</label>
+		<label xlink:label="ContactName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Name</label>
+		<label xlink:label="ContactName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Name of contact</label>
+		<label xlink:label="ContactName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Name</label>
+		<loc xlink:label="ContactFirstName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ContactFirstName"/>
+		<labelArc xlink:from="ContactFirstName_loc" xlink:to="ContactFirstName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ContactFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Prénom du contact</label>
+		<label xlink:label="ContactFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Prénom</label>
+		<label xlink:label="ContactFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Voornaam van de contactpersoon</label>
+		<label xlink:label="ContactFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Voornaam</label>
+		<label xlink:label="ContactFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Vorname der Kontaktperson</label>
+		<label xlink:label="ContactFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Vorname</label>
+		<label xlink:label="ContactFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">First name of contact</label>
+		<label xlink:label="ContactFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">First name</label>
+		<loc xlink:label="ContactTitlePosition_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ContactTitlePosition"/>
+		<labelArc xlink:from="ContactTitlePosition_loc" xlink:to="ContactTitlePosition_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ContactTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Fonction du contact</label>
+		<label xlink:label="ContactTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Fonction</label>
+		<label xlink:label="ContactTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Functie van de contactpersoon</label>
+		<label xlink:label="ContactTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Functie</label>
+		<label xlink:label="ContactTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Funktion der Kontaktperson</label>
+		<label xlink:label="ContactTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Funktion</label>
+		<label xlink:label="ContactTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Title or Position of contact</label>
+		<label xlink:label="ContactTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Title or Position</label>
+		<loc xlink:label="ContactAddress_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ContactAddress"/>
+		<labelArc xlink:from="ContactAddress_loc" xlink:to="ContactAddress_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ContactAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Adresse du contact</label>
+		<label xlink:label="ContactAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Adresse</label>
+		<label xlink:label="ContactAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Adres van de contactpersoon</label>
+		<label xlink:label="ContactAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Adres</label>
+		<label xlink:label="ContactAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Anschrift der Kontaktperson</label>
+		<label xlink:label="ContactAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Adresse</label>
+		<label xlink:label="ContactAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Address of contact</label>
+		<label xlink:label="ContactAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Address</label>
+		<loc xlink:label="ContactPhoneFaxNumber_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ContactPhoneFaxNumber"/>
+		<labelArc xlink:from="ContactPhoneFaxNumber_loc" xlink:to="ContactPhoneFaxNumber_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ContactPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Téléphone ou Fax du contact</label>
+		<label xlink:label="ContactPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Téléphone ou Fax</label>
+		<label xlink:label="ContactPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Telefoonnummer of faxnummer van de contactpersoon</label>
+		<label xlink:label="ContactPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Telefoonnummer of faxnummer</label>
+		<label xlink:label="ContactPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Telefon - oder Faxnummer der Kontaktperson</label>
+		<label xlink:label="ContactPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Telefon - oder Faxnummer</label>
+		<label xlink:label="ContactPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Phone or fax of contact</label>
+		<label xlink:label="ContactPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Phone or fax</label>
+		<loc xlink:label="ContactEmail_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_ContactEmail"/>
+		<labelArc xlink:from="ContactEmail_loc" xlink:to="ContactEmail_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="ContactEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">E-mail du contact</label>
+		<label xlink:label="ContactEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">E-mail</label>
+		<label xlink:label="ContactEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">E-mail van de contactpersoon</label>
+		<label xlink:label="ContactEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">E-mail</label>
+		<label xlink:label="ContactEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">E-Mail der Kontaktperson</label>
+		<label xlink:label="ContactEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">E-Mail</label>
+		<label xlink:label="ContactEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">E-mail of contact</label>
+		<label xlink:label="ContactEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">E-mail</label>
+		<loc xlink:label="BankInformation_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_BankInformation"/>
+		<labelArc xlink:from="BankInformation_loc" xlink:to="BankInformation_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="BankInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Information bancaire</label>
+		<label xlink:label="BankInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Information bancaire</label>
+		<label xlink:label="BankInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Bankinformatie</label>
+		<label xlink:label="BankInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Bankinformatie</label>
+		<label xlink:label="BankInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Bankauskunft</label>
+		<label xlink:label="BankInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Bankauskunft</label>
+		<label xlink:label="BankInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Bank information</label>
+		<label xlink:label="BankInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Bank information</label>
+		<loc xlink:label="BankIdentifierCode_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_BankIdentifierCode"/>
+		<labelArc xlink:from="BankIdentifierCode_loc" xlink:to="BankIdentifierCode_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="BankIdentifierCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">BIC</label>
+		<label xlink:label="BankIdentifierCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">BIC</label>
+		<label xlink:label="BankIdentifierCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">BIC</label>
+		<label xlink:label="BankIdentifierCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">BIC</label>
+		<label xlink:label="BankIdentifierCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">BIC</label>
+		<label xlink:label="BankIdentifierCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">BIC</label>
+		<label xlink:label="BankIdentifierCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">BIC</label>
+		<label xlink:label="BankIdentifierCode_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">BIC</label>
+		<loc xlink:label="InternationalBankAccountNumber_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_InternationalBankAccountNumber"/>
+		<labelArc xlink:from="InternationalBankAccountNumber_loc" xlink:to="InternationalBankAccountNumber_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="InternationalBankAccountNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">IBAN</label>
+		<label xlink:label="InternationalBankAccountNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">IBAN</label>
+		<label xlink:label="InternationalBankAccountNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">IBAN</label>
+		<label xlink:label="InternationalBankAccountNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">IBAN</label>
+		<label xlink:label="InternationalBankAccountNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">IBAN</label>
+		<label xlink:label="InternationalBankAccountNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">IBAN</label>
+		<label xlink:label="InternationalBankAccountNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">IBAN</label>
+		<label xlink:label="InternationalBankAccountNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">IBAN</label>
+		<loc xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure"/>
+		<labelArc xlink:from="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_loc" xlink:to="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Identifiant de la société dissoute sans liquidation</label>
+		<label xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Identifiant de la société dissoute sans liquidation</label>
+		<label xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Identificerend nummer van de zonder vereffening ontbonden vennootschap</label>
+		<label xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Identificerend nummer van de zonder vereffening ontbonden vennootschap</label>
+		<label xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Kennnummer der ohne Liquidation aufgelösten Gesellschaft</label>
+		<label xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Kennnummer der ohne Liquidation aufgelösten Gesellschaft</label>
+		<label xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Entity identifier of the company wound up without liquidation procedure</label>
+		<label xlink:label="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Entity identifier of the company wound up without liquidation procedure</label>
+		<loc xlink:label="DocumentInformation_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentInformation"/>
+		<labelArc xlink:from="DocumentInformation_loc" xlink:to="DocumentInformation_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Signalétique du document</label>
+		<label xlink:label="DocumentInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Signalétique du document</label>
+		<label xlink:label="DocumentInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Inlichtingen omtrent het document</label>
+		<label xlink:label="DocumentInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Inlichtingen omtrent het document</label>
+		<label xlink:label="DocumentInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Kennung des Dokuments</label>
+		<label xlink:label="DocumentInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Kennung des Dokuments</label>
+		<label xlink:label="DocumentInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document information</label>
+		<label xlink:label="DocumentInformation_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document information</label>
+		<loc xlink:label="DocumentIdentifier_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentIdentifier"/>
+		<labelArc xlink:from="DocumentIdentifier_loc" xlink:to="DocumentIdentifier_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Identification du document</label>
+		<label xlink:label="DocumentIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Identification du document</label>
+		<label xlink:label="DocumentIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Identificatie van het document</label>
+		<label xlink:label="DocumentIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Identificatie van het document</label>
+		<label xlink:label="DocumentIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Identifikation des Dokuments</label>
+		<label xlink:label="DocumentIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Identifikation des Dokuments</label>
+		<label xlink:label="DocumentIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document identifier</label>
+		<label xlink:label="DocumentIdentifier_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document identifier</label>
+		<loc xlink:label="DocumentIdentifierDescription_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentIdentifierDescription"/>
+		<labelArc xlink:from="DocumentIdentifierDescription_loc" xlink:to="DocumentIdentifierDescription_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentIdentifierDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Identification du document - Description</label>
+		<label xlink:label="DocumentIdentifierDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Identification du document - Description</label>
+		<label xlink:label="DocumentIdentifierDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Identificatie van het document - Omschrijving</label>
+		<label xlink:label="DocumentIdentifierDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Identificatie van het document - Omschrijving</label>
+		<label xlink:label="DocumentIdentifierDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Identifikation des Dokuments - Beschreibung</label>
+		<label xlink:label="DocumentIdentifierDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Identifikation des Dokuments - Beschreibung</label>
+		<label xlink:label="DocumentIdentifierDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document identifier description</label>
+		<label xlink:label="DocumentIdentifierDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document identifier description</label>
+		<loc xlink:label="DocumentNameTitle_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentNameTitle"/>
+		<labelArc xlink:from="DocumentNameTitle_loc" xlink:to="DocumentNameTitle_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentNameTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Nom ou titre du document</label>
+		<label xlink:label="DocumentNameTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Nom ou titre du document</label>
+		<label xlink:label="DocumentNameTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Benaming of titel van het document</label>
+		<label xlink:label="DocumentNameTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Benaming of titel van het document</label>
+		<label xlink:label="DocumentNameTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Name oder Titel des Dokuments</label>
+		<label xlink:label="DocumentNameTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Name oder Titel des Dokuments</label>
+		<label xlink:label="DocumentNameTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document name of title</label>
+		<label xlink:label="DocumentNameTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document name of title</label>
+		<loc xlink:label="DocumentDescription_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentDescription"/>
+		<labelArc xlink:from="DocumentDescription_loc" xlink:to="DocumentDescription_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Description du document</label>
+		<label xlink:label="DocumentDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Description du document</label>
+		<label xlink:label="DocumentDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Omschrijving van het document</label>
+		<label xlink:label="DocumentDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Omschrijving van het document</label>
+		<label xlink:label="DocumentDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Beschreibung des Dokuments</label>
+		<label xlink:label="DocumentDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Beschreibung des Dokuments</label>
+		<label xlink:label="DocumentDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document description</label>
+		<label xlink:label="DocumentDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document description</label>
+		<loc xlink:label="DocumentCreationDate_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentCreationDate"/>
+		<labelArc xlink:from="DocumentCreationDate_loc" xlink:to="DocumentCreationDate_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentCreationDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Date de création du document</label>
+		<label xlink:label="DocumentCreationDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Date de création du document</label>
+		<label xlink:label="DocumentCreationDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Creatiedatum van het document</label>
+		<label xlink:label="DocumentCreationDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Creatiedatum van het document</label>
+		<label xlink:label="DocumentCreationDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Erstellungsdatum des Dokuments</label>
+		<label xlink:label="DocumentCreationDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Erstellungsdatum des Dokuments</label>
+		<label xlink:label="DocumentCreationDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document creation date</label>
+		<label xlink:label="DocumentCreationDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document creation date</label>
+		<loc xlink:label="DocumentLastEditDate_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentLastEditDate"/>
+		<labelArc xlink:from="DocumentLastEditDate_loc" xlink:to="DocumentLastEditDate_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentLastEditDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Date de dernière édition du document</label>
+		<label xlink:label="DocumentLastEditDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Date de dernière édition du document</label>
+		<label xlink:label="DocumentLastEditDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Datum van de laatste versie van het document</label>
+		<label xlink:label="DocumentLastEditDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Datum van de laatste versie van het document</label>
+		<label xlink:label="DocumentLastEditDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Datum der letzten Version des Dokuments</label>
+		<label xlink:label="DocumentLastEditDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Datum der letzten Version des Dokuments</label>
+		<label xlink:label="DocumentLastEditDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document last edit date</label>
+		<label xlink:label="DocumentLastEditDate_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document last edit date</label>
+		<loc xlink:label="DocumentRevisionHistory_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentRevisionHistory"/>
+		<labelArc xlink:from="DocumentRevisionHistory_loc" xlink:to="DocumentRevisionHistory_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentRevisionHistory_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Historique du document</label>
+		<label xlink:label="DocumentRevisionHistory_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Historique du document</label>
+		<label xlink:label="DocumentRevisionHistory_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Historiek van het document</label>
+		<label xlink:label="DocumentRevisionHistory_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Historiek van het document</label>
+		<label xlink:label="DocumentRevisionHistory_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Historie des Dokuments</label>
+		<label xlink:label="DocumentRevisionHistory_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Historie des Dokuments</label>
+		<label xlink:label="DocumentRevisionHistory_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document revision history</label>
+		<label xlink:label="DocumentRevisionHistory_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document revision history</label>
+		<loc xlink:label="VersionNumber_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_VersionNumber"/>
+		<labelArc xlink:from="VersionNumber_loc" xlink:to="VersionNumber_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="VersionNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Numéro de version</label>
+		<label xlink:label="VersionNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Numéro de version</label>
+		<label xlink:label="VersionNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Versienummer</label>
+		<label xlink:label="VersionNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Versienummer</label>
+		<label xlink:label="VersionNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Versionsnummer</label>
+		<label xlink:label="VersionNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Versionsnummer</label>
+		<label xlink:label="VersionNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Version number</label>
+		<label xlink:label="VersionNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Version number</label>
+		<loc xlink:label="DocumentRevisionDescription_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentRevisionDescription"/>
+		<labelArc xlink:from="DocumentRevisionDescription_loc" xlink:to="DocumentRevisionDescription_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentRevisionDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Description de la révision</label>
+		<label xlink:label="DocumentRevisionDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Description de la révision</label>
+		<label xlink:label="DocumentRevisionDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Omschrijving van de bijwerking</label>
+		<label xlink:label="DocumentRevisionDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Omschrijving van de bijwerking</label>
+		<label xlink:label="DocumentRevisionDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Beschreibung der Überprüfung</label>
+		<label xlink:label="DocumentRevisionDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Beschreibung der Überprüfung</label>
+		<label xlink:label="DocumentRevisionDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Revision description</label>
+		<label xlink:label="DocumentRevisionDescription_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Revision description</label>
+		<loc xlink:label="RevisedName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_RevisedName"/>
+		<labelArc xlink:from="RevisedName_loc" xlink:to="RevisedName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="RevisedName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Auteur de la révision</label>
+		<label xlink:label="RevisedName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Auteur de la révision</label>
+		<label xlink:label="RevisedName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Persoon door wie de bijwerking is uitgevoerd</label>
+		<label xlink:label="RevisedName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Persoon door wie de bijwerking is uitgevoerd</label>
+		<label xlink:label="RevisedName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Überprüfer</label>
+		<label xlink:label="RevisedName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Überprüfer</label>
+		<label xlink:label="RevisedName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Revised by Name</label>
+		<label xlink:label="RevisedName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Revised by Name</label>
+		<loc xlink:label="RevisedTitle_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_RevisedTitle"/>
+		<labelArc xlink:from="RevisedTitle_loc" xlink:to="RevisedTitle_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="RevisedTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Fonction de l'auteur de la révision</label>
+		<label xlink:label="RevisedTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Fonction de l'auteur de la révision</label>
+		<label xlink:label="RevisedTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Functie van de persoon door wie de bijwerking is uitgevoerd</label>
+		<label xlink:label="RevisedTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Functie van de persoon door wie de bijwerking is uitgevoerd</label>
+		<label xlink:label="RevisedTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Funktion des Überprüfers</label>
+		<label xlink:label="RevisedTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Funktion des Überprüfers</label>
+		<label xlink:label="RevisedTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Revised by Title</label>
+		<label xlink:label="RevisedTitle_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Revised by Title</label>
+		<loc xlink:label="DateRevision_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DateRevision"/>
+		<labelArc xlink:from="DateRevision_loc" xlink:to="DateRevision_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DateRevision_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Date de révision</label>
+		<label xlink:label="DateRevision_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Date de révision</label>
+		<label xlink:label="DateRevision_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Datum van de bijwerking</label>
+		<label xlink:label="DateRevision_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Datum van de bijwerking</label>
+		<label xlink:label="DateRevision_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Datum der Überprüfung</label>
+		<label xlink:label="DateRevision_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Datum der Überprüfung</label>
+		<label xlink:label="DateRevision_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Date of revision</label>
+		<label xlink:label="DateRevision_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Date of revision</label>
+		<loc xlink:label="DocumentLanguage_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentLanguage"/>
+		<labelArc xlink:from="DocumentLanguage_loc" xlink:to="DocumentLanguage_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentLanguage_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Langue du document</label>
+		<label xlink:label="DocumentLanguage_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Langue</label>
+		<label xlink:label="DocumentLanguage_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Taal van het document</label>
+		<label xlink:label="DocumentLanguage_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Taal</label>
+		<label xlink:label="DocumentLanguage_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Sprache des Dokuments</label>
+		<label xlink:label="DocumentLanguage_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Sprache</label>
+		<label xlink:label="DocumentLanguage_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document language</label>
+		<label xlink:label="DocumentLanguage_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Language</label>
+		<loc xlink:label="DocumentAuthor_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentAuthor"/>
+		<labelArc xlink:from="DocumentAuthor_loc" xlink:to="DocumentAuthor_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Responsable du document</label>
+		<label xlink:label="DocumentAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Responsable du document</label>
+		<label xlink:label="DocumentAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Verantwortlicher für das Dokument</label>
+		<label xlink:label="DocumentAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Verantwortlicher für das Dokument</label>
+		<label xlink:label="DocumentAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document Author</label>
+		<label xlink:label="DocumentAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Document Author</label>
+		<loc xlink:label="DocumentAuthorName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentAuthorName"/>
+		<labelArc xlink:from="DocumentAuthorName_loc" xlink:to="DocumentAuthorName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentAuthorName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Nom du responsable du document</label>
+		<label xlink:label="DocumentAuthorName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Nom du responsable du document</label>
+		<label xlink:label="DocumentAuthorName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Naam van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Naam van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Name des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Name des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Name of document Author</label>
+		<label xlink:label="DocumentAuthorName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Name of document Author</label>
+		<loc xlink:label="DocumentAuthorFirstName_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentAuthorFirstName"/>
+		<labelArc xlink:from="DocumentAuthorFirstName_loc" xlink:to="DocumentAuthorFirstName_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentAuthorFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Prénom du responsable du document</label>
+		<label xlink:label="DocumentAuthorFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Prénom du responsable du document</label>
+		<label xlink:label="DocumentAuthorFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Voornaam van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Voornaam van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Vorname des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Vorname des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">First name of document Author</label>
+		<label xlink:label="DocumentAuthorFirstName_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">First name of document Author</label>
+		<loc xlink:label="DocumentAuthorTitlePosition_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentAuthorTitlePosition"/>
+		<labelArc xlink:from="DocumentAuthorTitlePosition_loc" xlink:to="DocumentAuthorTitlePosition_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentAuthorTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Fonction du responsable du document</label>
+		<label xlink:label="DocumentAuthorTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Fonction du responsable du document</label>
+		<label xlink:label="DocumentAuthorTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Functie van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Functie van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Funktion des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Funktion des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Title or position of document Author</label>
+		<label xlink:label="DocumentAuthorTitlePosition_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Title or position of document Author</label>
+		<loc xlink:label="DocumentAuthorAddress_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentAuthorAddress"/>
+		<labelArc xlink:from="DocumentAuthorAddress_loc" xlink:to="DocumentAuthorAddress_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentAuthorAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Adresse du responsable du document</label>
+		<label xlink:label="DocumentAuthorAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Adresse du responsable du document</label>
+		<label xlink:label="DocumentAuthorAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Adres van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Adres van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Anschrift des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Anschrift des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Address of document Author</label>
+		<label xlink:label="DocumentAuthorAddress_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Address of document Author</label>
+		<loc xlink:label="DocumentAuthorPhoneFaxNumber_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentAuthorPhoneFaxNumber"/>
+		<labelArc xlink:from="DocumentAuthorPhoneFaxNumber_loc" xlink:to="DocumentAuthorPhoneFaxNumber_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentAuthorPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Téléphone ou fax du responsable du document</label>
+		<label xlink:label="DocumentAuthorPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Téléphone ou fax du responsable du document</label>
+		<label xlink:label="DocumentAuthorPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Telefoonnummer of faxnummer van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Telefoonnummer of faxnummer van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Telefon- oder Faxnummer des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Telefon- oder Faxnummer des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Phone or fax of document Author</label>
+		<label xlink:label="DocumentAuthorPhoneFaxNumber_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Phone or fax of document Author</label>
+		<loc xlink:label="DocumentAuthorEmail_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentAuthorEmail"/>
+		<labelArc xlink:from="DocumentAuthorEmail_loc" xlink:to="DocumentAuthorEmail_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentAuthorEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">E-mail du responsable du document</label>
+		<label xlink:label="DocumentAuthorEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">E-mail du responsable du document</label>
+		<label xlink:label="DocumentAuthorEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">E-mail van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">E-mail van de persoon die verantwoordelijk is voor het document</label>
+		<label xlink:label="DocumentAuthorEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">E-Mail des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">E-Mail des für das Dokument Verantwortlichen</label>
+		<label xlink:label="DocumentAuthorEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">E-mail of document Author</label>
+		<label xlink:label="DocumentAuthorEmail_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">E-mail of document Author</label>
+		<loc xlink:label="MainAuthor_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_MainAuthor"/>
+		<labelArc xlink:from="MainAuthor_loc" xlink:to="MainAuthor_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="MainAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Responsable principal du document</label>
+		<label xlink:label="MainAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Responsable principal du document</label>
+		<label xlink:label="MainAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Eerste verantwoordelijke voor het document</label>
+		<label xlink:label="MainAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Eerste verantwoordelijke voor het document</label>
+		<label xlink:label="MainAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Hauptverantwortlicher für das Dokument</label>
+		<label xlink:label="MainAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Hauptverantwortlicher für das Dokument</label>
+		<label xlink:label="MainAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Main author of document</label>
+		<label xlink:label="MainAuthor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Main author of document</label>
+		<loc xlink:label="DocumentContact_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentContact"/>
+		<labelArc xlink:from="DocumentContact_loc" xlink:to="DocumentContact_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Personne de contact du document</label>
+		<label xlink:label="DocumentContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Personne de contact</label>
+		<label xlink:label="DocumentContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Contactpersoon voor het document</label>
+		<label xlink:label="DocumentContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Contactpersoon</label>
+		<label xlink:label="DocumentContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Kontaktperson für das Dokument</label>
+		<label xlink:label="DocumentContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Kontaktperson</label>
+		<label xlink:label="DocumentContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Document contact</label>
+		<label xlink:label="DocumentContact_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Contact</label>
+		<loc xlink:label="DocumentContactType_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_DocumentContactType"/>
+		<labelArc xlink:from="DocumentContactType_loc" xlink:to="DocumentContactType_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="DocumentContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Type de contact du document</label>
+		<label xlink:label="DocumentContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Type de contact</label>
+		<label xlink:label="DocumentContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Hoedanigheid van de contactpersoon voor het document</label>
+		<label xlink:label="DocumentContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Hoedanigheid van de contactpersoon</label>
+		<label xlink:label="DocumentContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Art des Kontakts für das Dokument</label>
+		<label xlink:label="DocumentContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Art des Kontakts</label>
+		<label xlink:label="DocumentContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Type of document contact</label>
+		<label xlink:label="DocumentContactType_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Type of contact</label>
+		<loc xlink:label="SoftwareVendor_loc" xlink:type="locator" xlink:href="pfs-gcd-2020-02-01.xsd#pfs-gcd_SoftwareVendor"/>
+		<labelArc xlink:from="SoftwareVendor_loc" xlink:to="SoftwareVendor_lab" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"/>
+		<label xlink:label="SoftwareVendor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="fr">Producteur de logiciel</label>
+		<label xlink:label="SoftwareVendor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="fr">Producteur de logiciel</label>
+		<label xlink:label="SoftwareVendor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="nl">Softwareproducent</label>
+		<label xlink:label="SoftwareVendor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="nl">Softwareproducent</label>
+		<label xlink:label="SoftwareVendor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="de">Softwarehersteller</label>
+		<label xlink:label="SoftwareVendor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="de">Softwarehersteller</label>
+		<label xlink:label="SoftwareVendor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="en">Software vendor</label>
+		<label xlink:label="SoftwareVendor_lab" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Software vendor</label>
+	</labelLink>
+</linkbase>

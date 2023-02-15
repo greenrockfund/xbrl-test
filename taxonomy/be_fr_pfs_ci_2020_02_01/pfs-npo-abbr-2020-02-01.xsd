@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:pfs="http://www.nbb.be/be/fr/pfs/ci/2020-02-01" xmlns:pfs-npo-abbr="http://www.nbb.be/be/fr/pfs/npo/abbreviated/2020-02-01" xmlns:pfs-gcd="http://www.nbb.be/be/fr/pfs/ci/gcd/2020-02-01" xmlns:pfs-vl="http://www.nbb.be/be/fr/pfs/ci/vl/2020-02-01" xmlns:pfs-dt="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" targetNamespace="http://www.nbb.be/be/fr/pfs/npo/abbreviated/2020-02-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-npo-abbr-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-npo-abbr-vl-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-npo-2020-02-01-label.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/AbbreviatedIdentifyingData" id="NPOAbbreviatedIdentifyingData">
+				<link:definition>Abbreviated identifying data</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/AbbreviatedBalanceSheet" id="NPOAbbreviatedBalanceSheet">
+				<link:definition>Abbreviated balance sheet non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/AbbreviatedIncomeStatement" id="NPOAbbreviatedIncomeStatement">
+				<link:definition>Abbreviated income statement non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/AbbreviatedAppropriationsWithdrawings" id="NPOAbbreviatedAppropriationsWithdrawings">
+				<link:definition>Abbreviated appropriations withdrawings non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/AbbreviatedDisclosures" id="NPOAbbreviatedDisclosures">
+				<link:definition>Abbreviated disclosures non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/AbbreviatedSocialBalanceSheet" id="NPOAbbreviatedSocialBalanceSheet">
+				<link:definition>Abbreviated social balance sheet non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/AbbreviatedValidationRules" id="NPOAbbreviatedValidationRules">
+				<link:definition>Abbreviated validation rules non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/AbbreviatedAccountantsReport" id="NPOAbbreviatedAccountantsReport">
+				<link:definition>Abbreviated accountants report non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl-instance-2003-12-31.xsd"/>
+</schema>

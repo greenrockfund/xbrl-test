@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:pfs="http://www.nbb.be/be/fr/pfs/ci/2020-02-01" xmlns:pfs-abbr="http://www.nbb.be/be/fr/pfs/ci/abbreviated/2020-02-01" xmlns:pfs-gcd="http://www.nbb.be/be/fr/pfs/ci/gcd/2020-02-01" xmlns:pfs-vl="http://www.nbb.be/be/fr/pfs/ci/vl/2020-02-01" xmlns:pfs-dt="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" targetNamespace="http://www.nbb.be/be/fr/pfs/ci/abbreviated/2020-02-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-abbr-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-abbr-vl-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedIdentifyingData" id="AbbreviatedIdentifyingData">
+				<link:definition>Abbreviated identifying data</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedAdministrators" id="AbbreviatedAdministrators">
+				<link:definition>Abbreviated administrators</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedBalanceSheet" id="AbbreviatedBalanceSheet">
+				<link:definition>Abbreviated balance sheet</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedIncomeStatement" id="AbbreviatedIncomeStatement">
+				<link:definition>Abbreviated income statement</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedAppropriationsWithdrawings" id="AbbreviatedAppropriationsWithdrawings">
+				<link:definition>Abbreviated appropriations withdrawings</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedDisclosures" id="AbbreviatedDisclosures">
+				<link:definition>Abbreviated disclosures</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedParticipatingInterests" id="AbbreviatedParticipatingInterests">
+				<link:definition>Abbreviated participating interests</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedShareholdingStructureDeclaration" id="AbbreviatedShareholdingStructureDeclaration">
+				<link:definition>Abbreviated shareholding structure declaration</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedOtherInformations" id="AbbreviatedOtherInformations">
+				<link:definition>Abbreviated other informations</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedManagementReport" id="AbbreviatedManagementReport">
+				<link:definition>Abbreviated management report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedAccountantsReport" id="AbbreviatedAccountantsReport">
+				<link:definition>Abbreviated accountants report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedSocialBalanceSheet" id="AbbreviatedSocialBalanceSheet">
+				<link:definition>Abbreviated social balance sheet</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedRemunerationReport" id="AbbreviatedRemunerationReport">
+				<link:definition>Abbreviated remuneration report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedMinutesOfPropertyConflictsOfInterestReport" id="AbbreviatedMinutesOfPropertyConflictsOfInterestReport">
+				<link:definition>Abbreviated minutes of property conflicts of interest report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedOnlyPartnerSpecialReport" id="AbbreviatedOnlyPartnerSpecialReport">
+				<link:definition>Abbreviated only partner special report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedSoleShareholderReport" id="AbbreviatedSoleShareholderReport">
+				<link:definition>Abbreviated sole shareholder report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedSupervisoryBoardReport" id="AbbreviatedSupervisoryBoardReport">
+				<link:definition>Abbreviated supervisory board report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedAnnualAccountReport" id="AbbreviatedAnnualAccountReport">
+				<link:definition>Abbreviated annual account report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/AbbreviatedOtherDocumentsReport" id="AbbreviatedOtherDocumentsReport">
+				<link:definition>Abbreviated other documents report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl-instance-2003-12-31.xsd"/>
+</schema>

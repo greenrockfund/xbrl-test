@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:pfs="http://www.nbb.be/be/fr/pfs/ci/2020-02-01" xmlns:pfs-npo-full="http://www.nbb.be/be/fr/pfs/npo/full/2020-02-01" xmlns:pfs-gcd="http://www.nbb.be/be/fr/pfs/ci/gcd/2020-02-01" xmlns:pfs-vl="http://www.nbb.be/be/fr/pfs/ci/vl/2020-02-01" xmlns:pfs-dt="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" targetNamespace="http://www.nbb.be/be/fr/pfs/npo/full/2020-02-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-npo-full-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-npo-full-vl-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-npo-2020-02-01-label.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/FullIdentifyingData" id="NPOFullIdentifyingData">
+				<link:definition>Full identifying data</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/FullBalanceSheet" id="NPOFullBalanceSheet">
+				<link:definition>Full balance sheet non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/FullIncomeStatement" id="NPOFullIncomeStatement">
+				<link:definition>Full income statement non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/FullAppropriationsWithdrawings" id="NPOFullAppropriationsWithdrawings">
+				<link:definition>Full appropriations withdrawings non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/FullDisclosures" id="NPOFullDisclosures">
+				<link:definition>Full disclosures non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/FullSocialBalanceSheet" id="NPOFullSocialBalanceSheet">
+				<link:definition>Full social balance sheet non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/FullValidationRules" id="NPOFullValidationRules">
+				<link:definition>Full validation rules non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/npo/role/FullAccountantsReport" id="NPOFullAccountantsReport">
+				<link:definition>Full accountants report non profit organisation</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl-instance-2003-12-31.xsd"/>
+</schema>

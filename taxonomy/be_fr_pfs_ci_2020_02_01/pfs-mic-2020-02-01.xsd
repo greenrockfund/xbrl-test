@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:pfs="http://www.nbb.be/be/fr/pfs/ci/2020-02-01" xmlns:pfs-mic="http://www.nbb.be/be/fr/pfs/ci/micro/2020-02-01" xmlns:pfs-gcd="http://www.nbb.be/be/fr/pfs/ci/gcd/2020-02-01" xmlns:pfs-vl="http://www.nbb.be/be/fr/pfs/ci/vl/2020-02-01" xmlns:pfs-dt="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" targetNamespace="http://www.nbb.be/be/fr/pfs/ci/micro/2020-02-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-mic-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-mic-vl-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroIdentifyingData" id="MicroIdentifyingData">
+				<link:definition>Micro identifying data</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroAdministrators" id="MicroAdministrators">
+				<link:definition>Micro administrators</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroBalanceSheet" id="MicroBalanceSheet">
+				<link:definition>Micro balance sheet</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroIncomeStatement" id="MicroIncomeStatement">
+				<link:definition>Micro income statement</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroAppropriationsWithdrawings" id="MicroAppropriationsWithdrawings">
+				<link:definition>Micro appropriations withdrawings</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroDisclosures" id="MicroDisclosures">
+				<link:definition>Micro disclosures</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroParticipatingInterests" id="MicroParticipatingInterests">
+				<link:definition>Micro participating interests</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroOtherInformations" id="MicroOtherInformations">
+				<link:definition>Micro other informations</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroManagementReport" id="MicroManagementReport">
+				<link:definition>Micro management report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroAccountantsReport" id="MicroAccountantsReport">
+				<link:definition>Micro accountants report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroSocialBalanceSheet" id="MicroSocialBalanceSheet">
+				<link:definition>Micro social balance sheet</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroRemunerationReport" id="MicroRemunerationReport">
+				<link:definition>Micro remuneration report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroMinutesOfPropertyConflictsOfInterestReport" id="MicroMinutesOfPropertyConflictsOfInterestReport">
+				<link:definition>Micro minutes of property conflicts of interest report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroOnlyPartnerSpecialReport" id="MicroOnlyPartnerSpecialReport">
+				<link:definition>Micro only partner special report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroSoleShareholderReport" id="MicroSoleShareholderReport">
+				<link:definition>Micro sole shareholder report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroSupervisoryBoardReport" id="MicroSupervisoryBoardReport">
+				<link:definition>Micro supervisory board report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroAnnualAccountReport" id="MicroAnnualAccountReport">
+				<link:definition>Micro annual account report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/MicroOtherDocumentsReport" id="MicroOtherDocumentsReport">
+				<link:definition>Micro other documents report</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl-instance-2003-12-31.xsd"/>
+</schema>

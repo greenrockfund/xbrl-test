@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:pfs-gcd="http://www.nbb.be/be/fr/pfs/ci/gcd/2020-02-01" xmlns:pfs-vl="http://www.nbb.be/be/fr/pfs/ci/vl/2020-02-01" xmlns:pfs-dt="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" targetNamespace="http://www.nbb.be/be/fr/pfs/ci/gcd/2020-02-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-gcd-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-gcd-vl-2020-02-01-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:href="pfs-gcd-2020-02-01-label.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:roleType roleURI="http://www.nbb.be/be/fr/pfs/ci/role/GlobalCommonDocument" id="GlobalCommonDocument">
+				<link:definition>Global Common Document</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl-instance-2003-12-31.xsd"/>
+	<import namespace="http://www.nbb.be/be/fr/pfs/ci/vl/2020-02-01" schemaLocation="pfs-vl-2020-02-01.xsd"/>
+	<import namespace="http://www.nbb.be/be/fr/pfs/ci/dt/2020-02-01" schemaLocation="pfs-dt-2020-02-01.xsd"/>
+	<element name="GlobalCommonDocument" type="xbrli:stringItemType" abstract="true" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_GlobalCommonDocument" xbrli:periodType="duration"/>
+	<element name="EntityInformation" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityInformation">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:EntityName"/>
+						<element ref="pfs-gcd:EntityIdentifier"/>
+						<element ref="pfs-gcd:EntityForm"/>
+						<element ref="pfs-gcd:EntityAddress"/>
+						<element ref="pfs-gcd:CommercialCourt" minOccurs="0"/>
+						<element ref="pfs-gcd:EntityEmail" minOccurs="0"/>
+						<element ref="pfs-gcd:EntityWebSite" minOccurs="0" maxOccurs="unbounded"/>
+						<element ref="pfs-gcd:EntityIndustrySectorCodeIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+						<element ref="pfs-gcd:DepositDateLastDeed" minOccurs="0"/>
+						<element ref="pfs-gcd:BankInformation" minOccurs="0"/>
+						<element ref="pfs-gcd:EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="EntityName" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityName">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:EntityCurrentLegalName"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="EntityCurrentLegalName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_EntityCurrentLegalName" xbrli:periodType="duration"/>
+	<element name="EntityTradingName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_EntityTradingName" xbrli:periodType="duration"/>
+	<element name="EntityDateNameChange" type="pfs-dt:limitedDateItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_EntityDateNameChange" xbrli:periodType="instant"/>
+	<element name="EntityIdentifier" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityIdentifier">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:IdentifierName"/>
+						<element ref="pfs-gcd:IdentifierValue"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="IdentifierName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_IdentifierName" xbrli:periodType="duration"/>
+	<element name="IdentifierValue" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_IdentifierValue" xbrli:periodType="duration"/>
+	<element name="EntityForm" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityForm">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<choice>
+						<element ref="pfs-vl:LegalFormCodeHead"/>
+						<element ref="pfs-gcd:LegalFormOther"/>
+					</choice>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="LegalFormOther" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_LegalFormOther" xbrli:periodType="duration"/>
+	<element name="EntityAddress" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityAddress">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:AddressType"/>
+						<element ref="pfs-gcd:Street"/>
+						<element ref="pfs-gcd:Number"/>
+						<element ref="pfs-gcd:Box" minOccurs="0"/>
+						<element ref="pfs-gcd:PostalCodeCity"/>
+						<element ref="pfs-gcd:CountryCode"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="AddressType" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_AddressType">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<choice>
+						<element ref="pfs-vl:AddressTypeCodeHead"/>
+						<element ref="pfs-gcd:AddressTypeOther"/>
+					</choice>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="AddressTypeOther" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_AddressTypeOther" xbrli:periodType="duration"/>
+	<element name="Street" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_Street" xbrli:periodType="duration"/>
+	<element name="Number" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_Number" xbrli:periodType="duration"/>
+	<element name="Box" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_Box" xbrli:periodType="duration"/>
+	<element name="PostalCodeCity" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_PostalCodeCity">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<choice>
+						<element ref="pfs-vl:PostalCodeHead"/>
+						<element ref="pfs-gcd:PostalCodeCityOther"/>
+					</choice>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="PostalCodeCityOther" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_PostalCodeCityOther">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:PostalCodeOther" minOccurs="0"/>
+						<element ref="pfs-gcd:City"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="PostalCodeOther" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_PostalCodeOther" xbrli:periodType="duration"/>
+	<element name="City" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_City" xbrli:periodType="duration"/>
+	<element name="CountryCode" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_CountryCode">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<choice>
+						<element ref="pfs-vl:CountryCodeHead"/>
+						<element ref="pfs-gcd:CountryCodeOther"/>
+					</choice>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="CountryCodeOther" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_CountryCodeOther" xbrli:periodType="duration"/>
+	<element name="CommercialCourt" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_CommercialCourt">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<choice>
+						<element ref="pfs-vl:CommercialCourtHead"/>
+						<element ref="pfs-gcd:CommercialCourtOther"/>
+					</choice>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="CommercialCourtOther" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_CommercialCourtOther" xbrli:periodType="duration"/>
+	<element name="EntityPhoneFaxNumber" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityPhoneFaxNumber">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:PhoneFaxNumber"/>
+						<element ref="pfs-gcd:CountryRegion" minOccurs="0"/>
+						<element ref="pfs-gcd:CityAreaCode" minOccurs="0"/>
+						<element ref="pfs-gcd:LocalPhoneNumber"/>
+						<element ref="pfs-gcd:ExtensionPhoneNumber" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="PhoneFaxNumber" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_PhoneFaxNumber" xbrli:periodType="duration"/>
+	<element name="CountryRegion" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_CountryRegion" xbrli:periodType="duration"/>
+	<element name="CityAreaCode" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_CityAreaCode" xbrli:periodType="duration"/>
+	<element name="LocalPhoneNumber" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_LocalPhoneNumber" xbrli:periodType="duration"/>
+	<element name="ExtensionPhoneNumber" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_ExtensionPhoneNumber" xbrli:periodType="duration"/>
+	<element name="EntityEmail" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityEmail">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:EmailAddress"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="EmailAddress" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_EmailAddress" xbrli:periodType="duration"/>
+	<element name="EntityWebSite" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityWebSite">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:WebSiteURL"/>
+						<element ref="pfs-gcd:WebSiteDescription" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="WebSiteURL" type="xbrli:anyURIItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_WebSiteURL" xbrli:periodType="duration"/>
+	<element name="WebSiteDescription" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_WebSiteDescription" xbrli:periodType="duration"/>
+	<element name="EntityIndustrySectorCodeIdentifier" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityIndustrySectorCodeIdentifier">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-vl:EntityIndustrySectorCodeIdentifierHead"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="DepositDateLastDeed" type="pfs-dt:limitedDateItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DepositDateLastDeed" xbrli:periodType="instant"/>
+	<element name="EntityPublicListingInformation" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityPublicListingInformation">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:ExchangeName"/>
+						<element ref="pfs-gcd:TradingSymbol"/>
+						<element ref="pfs-gcd:IssueTypeSecurityName"/>
+						<element ref="pfs-gcd:IssueTypeSecurityDescription"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="ExchangeName" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_ExchangeName" xbrli:periodType="duration"/>
+	<element name="TradingSymbol" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_TradingSymbol" xbrli:periodType="duration"/>
+	<element name="IssueTypeSecurityName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_IssueTypeSecurityName" xbrli:periodType="duration"/>
+	<element name="IssueTypeSecurityDescription" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_IssueTypeSecurityDescription" xbrli:periodType="duration"/>
+	<element name="EntityContact" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityContact">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:ContactType"/>
+						<element ref="pfs-gcd:ContactName"/>
+						<element ref="pfs-gcd:ContactFirstName"/>
+						<element ref="pfs-gcd:ContactTitlePosition" minOccurs="0"/>
+						<element ref="pfs-gcd:ContactAddress" minOccurs="0"/>
+						<element ref="pfs-gcd:ContactPhoneFaxNumber" minOccurs="0" maxOccurs="unbounded"/>
+						<element ref="pfs-gcd:ContactEmail" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="ContactType" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_ContactType" xbrli:periodType="duration"/>
+	<element name="ContactName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_ContactName" xbrli:periodType="duration"/>
+	<element name="ContactFirstName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_ContactFirstName" xbrli:periodType="duration"/>
+	<element name="ContactTitlePosition" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_ContactTitlePosition" xbrli:periodType="duration"/>
+	<element name="ContactAddress" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_ContactAddress">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:AddressType"/>
+						<element ref="pfs-gcd:Street"/>
+						<element ref="pfs-gcd:Number"/>
+						<element ref="pfs-gcd:Box" minOccurs="0"/>
+						<element ref="pfs-gcd:PostalCodeCity"/>
+						<element ref="pfs-gcd:CountryCode"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="ContactPhoneFaxNumber" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_ContactPhoneFaxNumber">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:PhoneFaxNumber"/>
+						<element ref="pfs-gcd:CountryRegion" minOccurs="0"/>
+						<element ref="pfs-gcd:CityAreaCode" minOccurs="0"/>
+						<element ref="pfs-gcd:LocalPhoneNumber"/>
+						<element ref="pfs-gcd:ExtensionPhoneNumber" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="ContactEmail" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_ContactEmail">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:EmailAddress"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="BankInformation" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_BankInformation">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:InternationalBankAccountNumber"/>
+						<element ref="pfs-gcd:BankIdentifierCode" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="BankIdentifierCode" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_BankIdentifierCode" xbrli:periodType="duration"/>
+	<element name="InternationalBankAccountNumber" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_InternationalBankAccountNumber" xbrli:periodType="duration"/>
+	<element name="EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_EntityIdentifierCompanyWoundUpWithoutLiquidationProcedure">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:IdentifierName"/>
+						<element ref="pfs-gcd:IdentifierValue"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="DocumentInformation" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentInformation">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:DocumentIdentifier"/>
+						<element ref="pfs-gcd:DocumentLanguage"/>
+						<element ref="pfs-gcd:DocumentContact" minOccurs="0" maxOccurs="unbounded"/>
+						<element ref="pfs-gcd:SoftwareVendor" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="DocumentIdentifier" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentIdentifier" xbrli:periodType="duration"/>
+	<element name="DocumentIdentifierDescription" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentIdentifierDescription" xbrli:periodType="duration"/>
+	<element name="DocumentNameTitle" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentNameTitle" xbrli:periodType="duration"/>
+	<element name="DocumentDescription" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentDescription" xbrli:periodType="duration"/>
+	<element name="DocumentCreationDate" type="pfs-dt:limitedDateItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentCreationDate" xbrli:periodType="instant"/>
+	<element name="DocumentLastEditDate" type="pfs-dt:limitedDateItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentLastEditDate" xbrli:periodType="instant"/>
+	<element name="DocumentRevisionHistory" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentRevisionHistory">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:VersionNumber"/>
+						<element ref="pfs-gcd:DocumentRevisionDescription" minOccurs="0"/>
+						<element ref="pfs-gcd:RevisedName"/>
+						<element ref="pfs-gcd:RevisedTitle" minOccurs="0"/>
+						<element ref="pfs-gcd:DateRevision" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="VersionNumber" type="xbrli:integerItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_VersionNumber" xbrli:periodType="duration"/>
+	<element name="DocumentRevisionDescription" type="xbrli:stringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentRevisionDescription" xbrli:periodType="duration"/>
+	<element name="RevisedName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_RevisedName" xbrli:periodType="duration"/>
+	<element name="RevisedTitle" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_RevisedTitle" xbrli:periodType="duration"/>
+	<element name="DateRevision" type="pfs-dt:limitedDateItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DateRevision" xbrli:periodType="instant"/>
+	<element name="DocumentLanguage" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentLanguage">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-vl:LanguageCodeHead"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="DocumentAuthor" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentAuthor">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:DocumentAuthorName"/>
+						<element ref="pfs-gcd:DocumentAuthorFirstName"/>
+						<element ref="pfs-gcd:DocumentAuthorTitlePosition" minOccurs="0"/>
+						<element ref="pfs-gcd:DocumentAuthorAddress" minOccurs="0"/>
+						<element ref="pfs-gcd:DocumentAuthorPhoneFaxNumber" minOccurs="0" maxOccurs="unbounded"/>
+						<element ref="pfs-gcd:DocumentAuthorEmail" minOccurs="0"/>
+						<element ref="pfs-gcd:MainAuthor"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="DocumentAuthorName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentAuthorName" xbrli:periodType="duration"/>
+	<element name="DocumentAuthorFirstName" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentAuthorFirstName" xbrli:periodType="duration"/>
+	<element name="DocumentAuthorTitlePosition" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_DocumentAuthorTitlePosition" xbrli:periodType="duration"/>
+	<element name="DocumentAuthorAddress" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentAuthorAddress">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:AddressType"/>
+						<element ref="pfs-gcd:Street" minOccurs="0"/>
+						<element ref="pfs-gcd:Number" minOccurs="0"/>
+						<element ref="pfs-gcd:Box" minOccurs="0"/>
+						<element ref="pfs-gcd:PostalCodeCity" minOccurs="0"/>
+						<element ref="pfs-gcd:CountryCode" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="DocumentAuthorPhoneFaxNumber" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentAuthorPhoneFaxNumber">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:PhoneFaxNumber"/>
+						<element ref="pfs-gcd:CountryRegion" minOccurs="0"/>
+						<element ref="pfs-gcd:CityAreaCode" minOccurs="0"/>
+						<element ref="pfs-gcd:LocalPhoneNumber"/>
+						<element ref="pfs-gcd:ExtensionPhoneNumber" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="DocumentAuthorEmail" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentAuthorEmail">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:EmailAddress"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="MainAuthor" type="xbrli:booleanItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_MainAuthor" xbrli:periodType="duration"/>
+	<element name="DocumentContact" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentContact">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-gcd:DocumentContactType"/>
+						<element ref="pfs-gcd:ContactName"/>
+						<element ref="pfs-gcd:ContactFirstName"/>
+						<element ref="pfs-gcd:ContactTitlePosition" minOccurs="0"/>
+						<element ref="pfs-gcd:ContactAddress" minOccurs="0"/>
+						<element ref="pfs-gcd:ContactPhoneFaxNumber" minOccurs="0" maxOccurs="unbounded"/>
+						<element ref="pfs-gcd:ContactEmail" minOccurs="0"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="DocumentContactType" abstract="false" substitutionGroup="xbrli:tuple" nillable="false" id="pfs-gcd_DocumentContactType">
+		<complexType>
+			<complexContent>
+				<restriction base="anyType">
+					<sequence>
+						<element ref="pfs-vl:DocumentContactTypeCodeHead"/>
+					</sequence>
+					<attribute name="id" type="ID" use="optional"/>
+				</restriction>
+			</complexContent>
+		</complexType>
+	</element>
+	<element name="SoftwareVendor" type="pfs-dt:nonEmptyTokenStringItemType" abstract="false" substitutionGroup="xbrli:item" nillable="false" id="pfs-gcd_SoftwareVendor" xbrli:periodType="duration"/>
+</schema>
